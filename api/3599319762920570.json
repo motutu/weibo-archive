@@ -1,0 +1,109 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3599319762920570",
+  "mblog": {
+    "_created_at": 1373628167,
+    "attitudes_count": 30,
+    "bid": "zFFLacfLY",
+    "comments_count": 10,
+    "created_at": "2013-07-12 19:22",
+    "favorited": false,
+    "id": "3599319762920570",
+    "isLongText": false,
+    "mblogtype": 0,
+    "pid": 3599304579352393,
+    "raw_text": "[呵呵]//@SNH48-徐_晨辰:关注起来！",
+    "reposts_count": 3,
+    "retweeted_status": {
+      "attitudes_count": 27,
+      "bid": "zFC5850Qw",
+      "bmiddle_pic": "http://ww2.sinaimg.cn/bmiddle/84f909afjw1e6jsghhzwpj20d7078gmf.jpg",
+      "comments_count": 47,
+      "created_at": "2013-07-12 10:00",
+      "favorited": false,
+      "id": "3599178381194896",
+      "isLongText": false,
+      "original_pic": "http://ww2.sinaimg.cn/large/84f909afjw1e6jsghhzwpj20d7078gmf.jpg",
+      "pics": [
+        {
+          "geo": {
+            "croped": false,
+            "height": "260",
+            "width": "475"
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "260",
+              "width": "475"
+            },
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/84f909afjw1e6jsghhzwpj20d7078gmf.jpg"
+          },
+          "pid": "84f909afjw1e6jsghhzwpj20d7078gmf",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/84f909afjw1e6jsghhzwpj20d7078gmf.jpg"
+        }
+      ],
+      "reposts_count": 247,
+      "source": "专业版微博",
+      "text": "【第二季好声音导师开场秀曝光】今晚《中国好声音》第二季火热开播，节目将在四位导师的合唱中展开，这也是国外版本的固有环节。节目开场便上演互相翻唱经典曲目的激情大戏，好声音来了！ <a data-url=\"http://t.cn/zQLYfiW\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?url_type=1&object_type=&pos=1&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Ftv.sohu.com%2F20130712%2Fn381415526.shtml%3Furl_type%3D1%26object_type%3D%26pos%3D1&ep=zFC5850Qw%2C2230913455%2CzFC5850Qw%2C2230913455\" class=\"\"><span class=\"url-icon\"><img src=\"http://u1.sinaimg.cn/upload/2014/10/16/timeline_card_small_video_default.png\"></span></i><span class=\"surl-text\">视频</a> ​​​",
+      "thumbnail_pic": "http://ww2.sinaimg.cn/thumbnail/84f909afjw1e6jsghhzwpj20d7078gmf.jpg",
+      "user": {
+        "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/9d44112bjw1f1xl1c10tuj20hs0hs0tw.jpg",
+        "description": "搜狐视频tv.sohu.com 带给你每日最及时、最好玩的视频新闻、电影、电视剧、纪录片等资讯，敬请关注！",
+        "follow_count": 525,
+        "follow_me": false,
+        "followers_count": 3016922,
+        "following": false,
+        "gender": "m",
+        "id": 2230913455,
+        "mbrank": 4,
+        "mbtype": 2,
+        "profile_image_url": "http://tva1.sinaimg.cn/crop.0.0.180.180.180/84f909afjw1e8qgp5bmzyj2050050aa8.jpg",
+        "profile_url": "http://m.weibo.cn/u/2230913455?uid=2230913455&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "搜狐视频",
+        "statuses_count": 38700,
+        "urank": 39,
+        "verified": true,
+        "verified_reason": "搜狐视频(tv.sohu.com)官方微博&搜狐视频移动客户端官方微博",
+        "verified_type": 3,
+        "verified_type_ext": 0
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "Android客户端",
+    "text": "[呵呵]//<a href='http://m.weibo.cn/n/SNH48-徐_晨辰'>@SNH48-徐_晨辰</a>:关注起来！",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/zFFLacfLY?mblogid=zFFLacfLY&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

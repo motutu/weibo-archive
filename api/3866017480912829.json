@@ -1,0 +1,82 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3866017480912829",
+  "mblog": {
+    "_created_at": 1437213856,
+    "attitudes_count": 85,
+    "bid": "CrHpO3Pt3",
+    "comments_count": 20,
+    "created_at": "2015-07-18 18:04",
+    "favorited": false,
+    "id": "3866017480912829",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "##SNH48第2届总选举##似乎现在的新公演本身就受到挺多非议的，但是公演是不能改变的，也是我们不能去选择的，唯有希望用我们的表演，让这场公演重新呈现出我们自己的感觉而让更多的人喜欢吧",
+    "reposts_count": 1,
+    "retweeted_status": {
+      "attitudes_count": 1,
+      "bid": "CrHoTA9qN",
+      "comments_count": 3,
+      "created_at": "2015-07-18 18:02",
+      "favorited": false,
+      "id": "3866016918616065",
+      "isLongText": false,
+      "reposts_count": 2,
+      "source": "微访谈",
+      "text": "向 <a href='http://m.weibo.cn/n/SNH48-张语格'>@SNH48-张语格</a> <a href='http://m.weibo.cn/n/SNH48-莫寒'>@SNH48-莫寒</a> 提问: <a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>SNH48第2届总选举<a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>公演我看得不多，请眼熟我！你们对于你们现在所跳的新公演，有什么感受吗？觉得是什么类型的公演 <a data-url=\"http://t.cn/RLffcws\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?act=1&tid=14082&date=2015-07-18&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Ftalk.weibo.com%2Fft%2F2015071314082%3Fact%3D1%26tid%3D14082%26date%3D2015-07-18&ep=CrHoTA9qN%2C2554031097%2CCrHoTA9qN%2C2554031097\" class=\"\"><span class=\"url-icon\"><img src=\"//h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_web_default.png\"></span></i><span class=\"surl-text\">进入本场微访谈</a> ​​​",
+      "user": {
+        "cover_image_phone": "http://ww4.sinaimg.cn/crop.0.0.640.640.640/983b6bf9gw1f5ezka7rlvj20ku0kujtf.jpg",
+        "description": "摄影入门，努力学习中~芝加哥|LOL|高马尾控|盘发控|JK控|萨克斯|J-POP",
+        "follow_count": 1498,
+        "follow_me": false,
+        "followers_count": 1043,
+        "following": false,
+        "gender": "m",
+        "id": 2554031097,
+        "mbrank": 6,
+        "mbtype": 12,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.750.750.180/983b6bf9jw8exu2os9235j20ku0ku3zb.jpg",
+        "profile_url": "http://m.weibo.cn/u/2554031097?uid=2554031097&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "回锅锅",
+        "statuses_count": 15268,
+        "urank": 38,
+        "verified": false,
+        "verified_type": 220
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "微访谈",
+    "text": "<a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>SNH48第2届总选举<a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>似乎现在的新公演本身就受到挺多非议的，但是公演是不能改变的，也是我们不能去选择的，唯有希望用我们的表演，让这场公演重新呈现出我们自己的感觉而让更多的人喜欢吧",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/CrHpO3Pt3?mblogid=CrHpO3Pt3&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

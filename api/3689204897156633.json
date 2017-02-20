@@ -1,0 +1,109 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3689204897156633",
+  "mblog": {
+    "_created_at": 1395058451,
+    "attitudes_count": 180,
+    "bid": "ABqCRu1Lz",
+    "comments_count": 49,
+    "created_at": "2014-03-17 20:14",
+    "favorited": false,
+    "id": "3689204897156633",
+    "isLongText": false,
+    "mblogtype": 0,
+    "pid": 3689195879097536,
+    "raw_text": "来来我们都是水果～草莓草莓草莓～ //@SNH48:出席成员：@SNH48-莫寒 @SNH48-李宇琪 @SNH48-孔肖吟 @SNH48-许佳琪 @SNH48-陈思 @SNH48-陈观慧 ，活动不需要门票[围观]",
+    "reposts_count": 23,
+    "retweeted_status": {
+      "attitudes_count": 174,
+      "bid": "ABq2hfc8E",
+      "bmiddle_pic": "http://ww2.sinaimg.cn/bmiddle/a04b2a1dgw1eeixu0tu5pj20f00asdkb.jpg",
+      "comments_count": 50,
+      "created_at": "2014-03-17 18:44",
+      "favorited": false,
+      "id": "3689182213621584",
+      "isLongText": false,
+      "original_pic": "http://ww2.sinaimg.cn/large/a04b2a1dgw1eeixu0tu5pj20f00asdkb.jpg",
+      "pics": [
+        {
+          "geo": {
+            "croped": false,
+            "height": 270,
+            "width": 375
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "388",
+              "width": "540"
+            },
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/a04b2a1dgw1eeixu0tu5pj20f00asdkb.jpg"
+          },
+          "pid": "a04b2a1dgw1eeixu0tu5pj20f00asdkb",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/a04b2a1dgw1eeixu0tu5pj20f00asdkb.jpg"
+        }
+      ],
+      "reposts_count": 257,
+      "source": "微博 weibo.com",
+      "text": "【活动预告】3/18 SNH48将现身在上海新国际博览中心举行的上海家电博览会夏普展区，嘉宾助阵夏普展会（E4-E7号馆）表演。具体表演时间如下：11:30、13:30、15:00，共计三场。欢迎大家多多捧场！ ​​​",
+      "thumbnail_pic": "http://ww2.sinaimg.cn/thumbnail/a04b2a1dgw1eeixu0tu5pj20f00asdkb.jpg",
+      "user": {
+        "cover_image_phone": "http://wx3.sinaimg.cn/crop.0.0.640.640.640/a04b2a1dly1fays2ry9chj20ku0kuwi00.jpg",
+        "description": "大家好，我们是大型女子偶像组合SNH48。感谢您对我们的支持与关注！客服电话：400-617-6598 。客服服务时间：7x24小时",
+        "follow_count": 382,
+        "follow_me": false,
+        "followers_count": 4740360,
+        "following": false,
+        "gender": "f",
+        "id": 2689280541,
+        "mbrank": 6,
+        "mbtype": 11,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.180/a04b2a1djw8elz2yidkv7j20500503yg.jpg",
+        "profile_url": "http://m.weibo.cn/u/2689280541?uid=2689280541&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48",
+        "statuses_count": 12603,
+        "urank": 40,
+        "verified": true,
+        "verified_reason": "SNH48团体官方微博",
+        "verified_type": 0,
+        "verified_type_ext": 1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "iPad客户端",
+    "text": "来来我们都是水果～草莓草莓草莓～ //<a href='http://m.weibo.cn/n/SNH48'>@SNH48</a>:出席成员：<a href='http://m.weibo.cn/n/SNH48-莫寒'>@SNH48-莫寒</a> <a href='http://m.weibo.cn/n/SNH48-李宇琪'>@SNH48-李宇琪</a> <a href='http://m.weibo.cn/n/SNH48-孔肖吟'>@SNH48-孔肖吟</a> <a href='http://m.weibo.cn/n/SNH48-许佳琪'>@SNH48-许佳琪</a> <a href='http://m.weibo.cn/n/SNH48-陈思'>@SNH48-陈思</a> <a href='http://m.weibo.cn/n/SNH48-陈观慧'>@SNH48-陈观慧</a> ，活动不需要门票<i class=\"face face_3 icon_22\">[围观]</i>",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/ABqCRu1Lz?mblogid=ABqCRu1Lz&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

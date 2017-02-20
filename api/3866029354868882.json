@@ -1,0 +1,57 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3866029354868882",
+  "mblog": {
+    "_created_at": 1437216686,
+    "attitudes_count": 253,
+    "bid": "CrHIXkqCm",
+    "comments_count": 14,
+    "created_at": "2015-07-18 18:51",
+    "favorited": false,
+    "id": "3866029354868882",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "##SNH48第2届总选举##哭死了又能怎么样呢，既然结果既定了的话，但是人生还是在步步推进啊，又不是在这里停止了，未来怎样不去到那里谁知道呢。接受或者不接受，结果都在那里呀。",
+    "reposts_count": 3,
+    "retweeted_status": {
+      "bid": "CrHuYlgeG",
+      "created_at": "2015-07-18 18:17",
+      "deleted": "1",
+      "id": "3866020685067302",
+      "source": "",
+      "state": 7,
+      "text": "抱歉，此微博已被作者删除。查看帮助：http://t.cn/Rfd3rQV",
+      "user": null
+    },
+    "source": "微访谈",
+    "text": "<a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>SNH48第2届总选举<a class='k' href='http://m.weibo.cn/k/?from=feed'>##</a>哭死了又能怎么样呢，既然结果既定了的话，但是人生还是在步步推进啊，又不是在这里停止了，未来怎样不去到那里谁知道呢。接受或者不接受，结果都在那里呀。",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/CrHIXkqCm?mblogid=CrHIXkqCm&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

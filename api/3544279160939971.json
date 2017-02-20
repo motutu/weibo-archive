@@ -1,0 +1,62 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3544279160939971",
+  "mblog": {
+    "_created_at": 1360505463,
+    "attitudes_count": 24,
+    "bid": "zizU03WwP",
+    "bmiddle_pic": "http://ww1.sinaimg.cn/bmiddle/b5ff8eb1gw1e1onw8krxtg.gif",
+    "comments_count": 157,
+    "created_at": "2013-02-10 22:11",
+    "favorited": false,
+    "id": "3544279160939971",
+    "isLongText": false,
+    "mblogtype": 0,
+    "original_pic": "http://ww1.sinaimg.cn/large/b5ff8eb1gw1e1onw8krxtg.gif",
+    "pics": [
+      {
+        "geo": false,
+        "large": {
+          "geo": false,
+          "size": "large",
+          "url": "http://ww1.sinaimg.cn/large/b5ff8eb1gw1e1onw8krxtg.gif"
+        },
+        "pid": "b5ff8eb1gw1e1onw8krxtg",
+        "size": "orj360",
+        "url": "http://ww1.sinaimg.cn/orj360/b5ff8eb1gw1e1onw8krxtg.gif"
+      }
+    ],
+    "reposts_count": 13,
+    "source": "微博 weibo.com",
+    "text": "今天去了山上，下山的时候膝盖又开始痛，让医生舅舅看过后说我属于先天不足小时候体质不好导致骨骼不够坚固。。。其实我觉得我现在已经壮成一头牛了！不过小时候好好锻炼还是能改变一下体质的！春晚已经过去了，但是大家别忘记咱二次元的大礼哦~A站春晚和B站的拜年祭~太给力了不容错过！~o(≧v≦)o~~ ​​​",
+    "thumbnail_pic": "http://ww1.sinaimg.cn/thumbnail/b5ff8eb1gw1e1onw8krxtg.gif",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/zizU03WwP?mblogid=zizU03WwP&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

@@ -1,0 +1,135 @@
+body {
+  margin: 50px auto 30px auto;
+  width: 620px;
+  font: 16px "Times New Roman", Times, "Songti SC", SimSum, serif;
+  text-align: justify;
+  background: #fbe9f1;
+}
+h1 {
+  text-align: center;
+  font-size: 140%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+a.fancybox-close {
+  border-bottom: none;
+}
+hr {
+  margin: 0 10px;
+  border: 0;
+  border-top: 1px solid #eb93b9;
+}
+img {
+  vertical-align: middle;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clickable {
+  border-bottom: solid 1px;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+.nav-right {
+  position: fixed;
+  left: calc(50% + 360px);
+  top: calc(50% - 42px);
+  font-size: 110%;
+  line-height: 160%;
+  color: #f3bed5;
+}
+.nav-right a {
+  border-bottom: none;
+}
+.info-nav-bar {
+  margin: 5px 10px;
+  font-size: 80%;
+}
+.info-nav-bar-nav {
+  margin-left: 3px;
+}
+.status {
+  padding: 8px 10px;
+}
+.status.highlight {
+  background: #fcf2f8;
+  box-shadow: 0 0 2px 1px #eb93b9;
+}
+.weibo-link {
+  font-size: 75%;
+  color: #888;
+}
+.weibo-link a {
+  border-bottom: none;
+}
+.status-text {
+  margin: 5px 0;
+}
+.status-text img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: 1px;
+}
+.orig-post {
+  padding: 5px 10px;
+  background: #f7d4e3;
+}
+.orig-post img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: 1px;
+}
+.gallery {
+  margin: 7px 0 5px 0;
+  width: 366px;
+}
+.gallery.grid1 {
+  width: 122px;
+}
+.gallery.grid2,
+.gallery.grid4 {
+  width: 244px;
+}
+.gallery.standalone {
+  margin: 10px auto;
+  width: 610px;
+}
+.gallery a {
+  float: left;
+  padding: 1px;
+  border-bottom: none;
+}
+.gallery img {
+  width: 120px;
+  height: 120px;
+  color: #f6cbde;
+  background: #f6cbde;
+}
+.fancybox {
+  position: relative;
+}
+.fancybox .gif-indicator {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+/*# sourceMappingURL=theme.css.map */

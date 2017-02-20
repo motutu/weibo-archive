@@ -1,0 +1,100 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3555833927461354",
+  "mblog": {
+    "_created_at": 1363260333,
+    "attitudes_count": 18,
+    "bid": "znquIvj2q",
+    "comments_count": 73,
+    "created_at": "2013-03-14 19:25",
+    "favorited": false,
+    "id": "3555833927461354",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "我等着见你！没错没错，就是对你说的！~(*^﹏^*)会仔细看着你的~是准备躲避我的目光么~_~打滚状！拜托要带着我们的约定来哦！~",
+    "reposts_count": 13,
+    "retweeted_status": {
+      "attitudes_count": 38,
+      "bid": "znqfF2U2b",
+      "bmiddle_pic": "http://ww3.sinaimg.cn/bmiddle/a04b2a1dgw1e2phx7jqzxj.jpg",
+      "comments_count": 177,
+      "created_at": "2013-03-14 18:48",
+      "favorited": false,
+      "id": "3555824590692055",
+      "isLongText": false,
+      "original_pic": "http://ww3.sinaimg.cn/large/a04b2a1dgw1e2phx7jqzxj.jpg",
+      "pics": [
+        {
+          "geo": false,
+          "large": {
+            "geo": false,
+            "size": "large",
+            "url": "http://ww3.sinaimg.cn/large/a04b2a1dgw1e2phx7jqzxj.jpg"
+          },
+          "pid": "a04b2a1dgw1e2phx7jqzxj",
+          "size": "orj360",
+          "url": "http://ww3.sinaimg.cn/orj360/a04b2a1dgw1e2phx7jqzxj.jpg"
+        }
+      ],
+      "reposts_count": 910,
+      "source": "微博 weibo.com",
+      "text": "<a class='k' href='http://m.weibo.cn/k/SNH48握手会?from=feed'>#SNH48握手会#</a>3月31日的梅赛德斯奔驰文化中心即将迎来新生代女子偶像团体SNH48，在总结了首场公演的得失经验后，加倍用功，苦练舞艺，努力把属于团队的主打歌最完美的呈现给歌迷朋友们，借助这次握手会，成员们也将深情献歌，用最佳的表演来感谢粉丝们的一路支持。详情请点击：<a data-url=\"http://t.cn/zOWq89R\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?url_type=39&object_type=webpage&pos=1&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fwww.snh48.com%2F%3Furl_type%3D39%26object_type%3Dwebpage%26pos%3D1&ep=znqfF2U2b%2C2689280541%2CznqfF2U2b%2C2689280541\" class=\"\"><span class=\"url-icon\"><img src=\"//h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_web_default.png\"></span></i><span class=\"surl-text\">中国大型女子偶像组合SNH48——AKB48全球姐妹团体——SNH48中国官方网站</a> ​​​",
+      "thumbnail_pic": "http://ww3.sinaimg.cn/thumbnail/a04b2a1dgw1e2phx7jqzxj.jpg",
+      "user": {
+        "cover_image_phone": "http://wx3.sinaimg.cn/crop.0.0.640.640.640/a04b2a1dly1fays2ry9chj20ku0kuwi00.jpg",
+        "description": "大家好，我们是大型女子偶像组合SNH48。感谢您对我们的支持与关注！客服电话：400-617-6598 。客服服务时间：7x24小时",
+        "follow_count": 382,
+        "follow_me": false,
+        "followers_count": 4740086,
+        "following": false,
+        "gender": "f",
+        "id": 2689280541,
+        "mbrank": 6,
+        "mbtype": 11,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.180/a04b2a1djw8elz2yidkv7j20500503yg.jpg",
+        "profile_url": "http://m.weibo.cn/u/2689280541?uid=2689280541&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48",
+        "statuses_count": 12599,
+        "urank": 40,
+        "verified": true,
+        "verified_reason": "SNH48团体官方微博",
+        "verified_type": 0,
+        "verified_type_ext": 1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "索尼Xperia SL LT26ii",
+    "text": "我等着见你！没错没错，就是对你说的！~(*^﹏^*)会仔细看着你的~是准备躲避我的目光么~_~打滚状！拜托要带着我们的约定来哦！~",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/znquIvj2q?mblogid=znquIvj2q&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

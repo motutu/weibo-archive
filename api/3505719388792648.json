@@ -1,0 +1,98 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3505719388792648",
+  "mblog": {
+    "_created_at": 1351312098,
+    "attitudes_count": 21,
+    "bid": "z2oMOATmU",
+    "comments_count": 67,
+    "created_at": "2012-10-27 12:28",
+    "favorited": false,
+    "id": "3505719388792648",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "剧场动工啦！很快就能和大家见面咯！~今天碰到的那个饭太让我感动啦！谢谢你！(*¯︶¯*)心意满满！我们一定会保持初心加油的！::>_<::",
+    "reposts_count": 8,
+    "retweeted_status": {
+      "attitudes_count": 8,
+      "bid": "z2oDGb14I",
+      "bmiddle_pic": "http://ww4.sinaimg.cn/bmiddle/b6130a8bjw1dy9mrr2j0cj.jpg",
+      "comments_count": 197,
+      "created_at": "2012-10-27 12:05",
+      "favorited": false,
+      "id": "3505713722625744",
+      "isLongText": false,
+      "original_pic": "http://ww4.sinaimg.cn/large/b6130a8bjw1dy9mrr2j0cj.jpg",
+      "pics": [
+        {
+          "geo": false,
+          "large": {
+            "geo": false,
+            "size": "large",
+            "url": "http://ww4.sinaimg.cn/large/b6130a8bjw1dy9mrr2j0cj.jpg"
+          },
+          "pid": "b6130a8bjw1dy9mrr2j0cj",
+          "size": "orj360",
+          "url": "http://ww4.sinaimg.cn/orj360/b6130a8bjw1dy9mrr2j0cj.jpg"
+        }
+      ],
+      "reposts_count": 738,
+      "source": "Weico.iPhone",
+      "text": "今天是一个值得纪念的日子，11点48分，成员们齐聚一堂，参加SNH48星梦剧院的开工仪式。SNH48星梦剧院预计将于明年4月完工，届时将成为年轻人的又一个时尚聚集地，敬请大家期待！ ​​​",
+      "thumbnail_pic": "http://ww4.sinaimg.cn/thumbnail/b6130a8bjw1dy9mrr2j0cj.jpg",
+      "user": {
+        "cover_image_phone": "http://ww4.sinaimg.cn/crop.0.0.640.640.640/6ce2240djw1e8iktk4ohij20hs0hsmz6.jpg",
+        "description": "SNH48 专属星梦咖啡店  官方资源站：http://www.snh48.com/cafe/ 欢迎一起来玩耍！",
+        "follow_count": 119,
+        "follow_me": false,
+        "followers_count": 34987,
+        "following": false,
+        "gender": "f",
+        "id": 3054701195,
+        "mbrank": 0,
+        "mbtype": 0,
+        "profile_image_url": "http://tva4.sinaimg.cn/crop.0.0.512.512.180/b6130a8bjw8eejv9c50gvj20e80e8ab1.jpg",
+        "profile_url": "http://m.weibo.cn/u/3054701195?uid=3054701195&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48-星梦咖啡店",
+        "statuses_count": 1078,
+        "urank": 26,
+        "verified": false,
+        "verified_type": -1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "Android客户端",
+    "text": "剧场动工啦！很快就能和大家见面咯！~今天碰到的那个饭太让我感动啦！谢谢你！(*¯︶¯*)心意满满！我们一定会保持初心加油的！::&gt;_&lt;::",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/z2oMOATmU?mblogid=z2oMOATmU&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

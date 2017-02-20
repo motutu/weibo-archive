@@ -1,0 +1,109 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3626894291882749",
+  "mblog": {
+    "_created_at": 1380202445,
+    "attitudes_count": 90,
+    "bid": "AbhDT7TMV",
+    "comments_count": 49,
+    "created_at": "2013-09-26 21:34",
+    "favorited": false,
+    "id": "3626894291882749",
+    "isLongText": false,
+    "mblogtype": 0,
+    "pid": 3626839581197481,
+    "raw_text": "丧心病狂哈哈哈！//@cha研:说到这个就不得不提资产阶级大毒草魔卡少女樱，美国电视台引进以后把小狼对雪兔脸红的删了，桃矢欺负小樱的删了，小樱那个同学暗恋老师的戏删了，结局的机场整段全删了…相比之下王小明也不算什么了",
+    "reposts_count": 132,
+    "retweeted_status": {
+      "attitudes_count": 5641,
+      "bid": "AbdRrdL2f",
+      "bmiddle_pic": "http://ww3.sinaimg.cn/bmiddle/64112046gw1e8zrf6tfarj20c85gm4qp.jpg",
+      "comments_count": 9355,
+      "created_at": "2013-09-26 11:56",
+      "favorited": false,
+      "id": "3626748933279071",
+      "isLongText": false,
+      "original_pic": "http://ww3.sinaimg.cn/large/64112046gw1e8zrf6tfarj20c85gm4qp.jpg",
+      "pics": [
+        {
+          "geo": {
+            "croped": false,
+            "height": 5791,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "7078",
+              "width": "440"
+            },
+            "size": "large",
+            "url": "http://ww3.sinaimg.cn/large/64112046gw1e8zrf6tfarj20c85gm4qp.jpg"
+          },
+          "pid": "64112046gw1e8zrf6tfarj20c85gm4qp",
+          "size": "orj360",
+          "url": "http://ww3.sinaimg.cn/orj360/64112046gw1e8zrf6tfarj20c85gm4qp.jpg"
+        }
+      ],
+      "reposts_count": 44874,
+      "source": "微博 weibo.com",
+      "text": "说到动画片分级审核，不得不提北美最大的奇葩4Kids电视公司制作的英语配音动画，该电视台秉承“不见血、不杀人、不抽烟、不喝酒、日本饭团变成美国三明治”的宗旨，让观众深恶痛绝。以下是一些例子。[bed凌乱] ​​​",
+      "thumbnail_pic": "http://ww3.sinaimg.cn/thumbnail/64112046gw1e8zrf6tfarj20c85gm4qp.jpg",
+      "user": {
+        "cover_image_phone": "http://ww3.sinaimg.cn/crop.0.0.640.640.640/6ce2240djw1e9oaqhwllzj20hs0hsdir.jpg",
+        "description": "这个人的笑点比较奇怪。//不定期搬运各种视频图片段子，偶尔翻译。 (S1：周愚)",
+        "follow_count": 269,
+        "follow_me": false,
+        "followers_count": 1058519,
+        "following": false,
+        "gender": "m",
+        "id": 1678843974,
+        "mbrank": 6,
+        "mbtype": 12,
+        "profile_image_url": "http://tva3.sinaimg.cn/crop.0.0.180.180.180/64112046jw1e8qgp5bmzyj2050050aa8.jpg",
+        "profile_url": "http://m.weibo.cn/u/1678843974?uid=1678843974&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "fall_ark",
+        "statuses_count": 3896,
+        "urank": 32,
+        "verified": true,
+        "verified_reason": "翻译，Liz Climo系列作品译者",
+        "verified_type": 0,
+        "verified_type_ext": 0
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "Android客户端",
+    "text": "丧心病狂哈哈哈！//<a href='http://m.weibo.cn/n/cha研'>@cha研</a>:说到这个就不得不提资产阶级大毒草魔卡少女樱，美国电视台引进以后把小狼对雪兔脸红的删了，桃矢欺负小樱的删了，小樱那个同学暗恋老师的戏删了，结局的机场整段全删了…相比之下王小明也不算什么了",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/AbhDT7TMV?mblogid=AbhDT7TMV&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

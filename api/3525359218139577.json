@@ -1,0 +1,100 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3525359218139577",
+  "mblog": {
+    "_created_at": 1355994596,
+    "attitudes_count": 16,
+    "bid": "zaDHXy9tv",
+    "comments_count": 97,
+    "created_at": "2012-12-20 17:09",
+    "favorited": false,
+    "id": "3525359218139577",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "外套颜色大爱~大冬天的希望大家可以感受到温暖哦~(*¯︶¯*)",
+    "reposts_count": 8,
+    "retweeted_status": {
+      "attitudes_count": 41,
+      "bid": "zaC9H9lls",
+      "bmiddle_pic": "http://ww3.sinaimg.cn/bmiddle/a04b2a1dtw1e004587g91j.jpg",
+      "comments_count": 244,
+      "created_at": "2012-12-20 13:12",
+      "favorited": false,
+      "id": "3525299532227006",
+      "isLongText": false,
+      "original_pic": "http://ww3.sinaimg.cn/large/a04b2a1dtw1e004587g91j.jpg",
+      "pics": [
+        {
+          "geo": false,
+          "large": {
+            "geo": false,
+            "size": "large",
+            "url": "http://ww3.sinaimg.cn/large/a04b2a1dtw1e004587g91j.jpg"
+          },
+          "pid": "a04b2a1dtw1e004587g91j",
+          "size": "orj360",
+          "url": "http://ww3.sinaimg.cn/orj360/a04b2a1dtw1e004587g91j.jpg"
+        }
+      ],
+      "reposts_count": 2393,
+      "source": "微博 weibo.com",
+      "text": "<a class='k' href='http://m.weibo.cn/k/SNH48队服?from=feed'>#SNH48队服#</a>在10月发布会上身穿印有SNH48字样的T恤登场的SNH48一期生成员们，终于可以穿上了属于自己队服啦！队服以粉杏色为主要色调，不仅展现出一期生成员们朝气可爱的少女一面，同时制服正装风格的设计也适合出席各种正式场合，活泼中不失严肃谦逊。详情请点击：<a data-url=\"http://t.cn/zjNf7KU\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fwww.snh48.com%2Fhtml%2Fzixun%2F2012%2F1220%2F45.html&ep=zaC9H9lls%2C2689280541%2CzaC9H9lls%2C2689280541\" class=\"\"><span class=\"url-icon\"><img src=\"//h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_web_default.png\"></span></i><span class=\"surl-text\">网页链接</a> 满满的自豪感~ ​​​",
+      "thumbnail_pic": "http://ww3.sinaimg.cn/thumbnail/a04b2a1dtw1e004587g91j.jpg",
+      "user": {
+        "cover_image_phone": "http://wx3.sinaimg.cn/crop.0.0.640.640.640/a04b2a1dly1fays2ry9chj20ku0kuwi00.jpg",
+        "description": "大家好，我们是大型女子偶像组合SNH48。感谢您对我们的支持与关注！客服电话：400-617-6598 。客服服务时间：7x24小时",
+        "follow_count": 382,
+        "follow_me": false,
+        "followers_count": 4740360,
+        "following": false,
+        "gender": "f",
+        "id": 2689280541,
+        "mbrank": 6,
+        "mbtype": 11,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.180/a04b2a1djw8elz2yidkv7j20500503yg.jpg",
+        "profile_url": "http://m.weibo.cn/u/2689280541?uid=2689280541&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48",
+        "statuses_count": 12603,
+        "urank": 40,
+        "verified": true,
+        "verified_reason": "SNH48团体官方微博",
+        "verified_type": 0,
+        "verified_type_ext": 1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "索尼Xperia SL LT26ii",
+    "text": "外套颜色大爱~大冬天的希望大家可以感受到温暖哦~(*¯︶¯*)",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/zaDHXy9tv?mblogid=zaDHXy9tv&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

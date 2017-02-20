@@ -1,0 +1,111 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3539440641495465",
+  "mblog": {
+    "_created_at": 1359351871,
+    "attitudes_count": 10,
+    "bid": "zgy1W6h2p",
+    "comments_count": 199,
+    "created_at": "2013-01-28 13:44",
+    "favorited": false,
+    "id": "3539440641495465",
+    "isLongText": false,
+    "mblogtype": 0,
+    "pid": 3539440137690861,
+    "raw_text": "呼呼呼//@SNH48-董芷依:嘻嘻嘻//@SNH48-戴萌:呵呵呵",
+    "reposts_count": 16,
+    "retweeted_status": {
+      "attitudes_count": 15,
+      "bid": "zgx9waUzP",
+      "bmiddle_pic": "http://ww4.sinaimg.cn/bmiddle/a04b2a1djw1e194dn5civj.jpg",
+      "comments_count": 92,
+      "created_at": "2013-01-28 11:30",
+      "favorited": false,
+      "id": "3539406902600765",
+      "isLongText": false,
+      "original_pic": "http://ww4.sinaimg.cn/large/a04b2a1djw1e194dn5civj.jpg",
+      "page_info": {
+        "content1": "",
+        "content2": "",
+        "page_pic": {
+          "url": "http://u1.sinaimg.cn/upload/2013/02/05/topic_default.png"
+        },
+        "page_title": "#SNH48发布演出人气选拔投票活动#",
+        "page_url": "http://weibo.cn/sinaurl?containerid=1008088d7871941510a68e1012eaf214065a4f&extparam=SNH48%E5%8F%91%E5%B8%83%E6%BC%94%E5%87%BA%E4%BA%BA%E6%B0%94%E9%80%89%E6%8B%94%E6%8A%95%E7%A5%A8%E6%B4%BB%E5%8A%A8&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fm.weibo.cn%2Fp%2Findex%3Fcontainerid%3D1008088d7871941510a68e1012eaf214065a4f%26extparam%3DSNH48%25E5%258F%2591%25E5%25B8%2583%25E6%25BC%2594%25E5%2587%25BA%25E4%25BA%25BA%25E6%25B0%2594%25E9%2580%2589%25E6%258B%2594%25E6%258A%2595%25E7%25A5%25A8%25E6%25B4%25BB%25E5%258A%25A8%26luicode%3D10000011%26lfid%3D1076033053424305",
+        "type": "topic"
+      },
+      "pics": [
+        {
+          "geo": false,
+          "large": {
+            "geo": false,
+            "size": "large",
+            "url": "http://ww4.sinaimg.cn/large/a04b2a1djw1e194dn5civj.jpg"
+          },
+          "pid": "a04b2a1djw1e194dn5civj",
+          "size": "orj360",
+          "url": "http://ww4.sinaimg.cn/orj360/a04b2a1djw1e194dn5civj.jpg"
+        }
+      ],
+      "reposts_count": 220,
+      "source": "时光机",
+      "text": "小编现在先这里说一声抱歉了！由于某些原因，此次我们的<a class='k' href='http://m.weibo.cn/k/SNH48发布演出人气选拔投票活动?from=feed'>#SNH48发布演出人气选拔投票活动#</a>更改为<a class='k' href='http://m.weibo.cn/k/寻找SNH48发布演出中最耀眼的新星?from=feed'>#寻找SNH48发布演出中最耀眼的新星#</a>，活动依旧今天中午12点开始！！请大家准时关注+参加哦！SNH48首张单曲宣传CD等着大家！！活动详情请点击：<a data-url=\"http://t.cn/zYznKeK\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?mod=viewthread&tid=3445&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fclub.snh48.com%2Fforum.php%3Fmod%3Dviewthread%26tid%3D3445&ep=zgx9waUzP%2C2689280541%2Czgx9waUzP%2C2689280541\" class=\"\"><span class=\"url-icon\"><img src=\"//h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_web_default.png\"></span></i><span class=\"surl-text\">网页链接</a> ​​​",
+      "thumbnail_pic": "http://ww4.sinaimg.cn/thumbnail/a04b2a1djw1e194dn5civj.jpg",
+      "user": {
+        "cover_image_phone": "http://wx3.sinaimg.cn/crop.0.0.640.640.640/a04b2a1dly1fays2ry9chj20ku0kuwi00.jpg",
+        "description": "大家好，我们是大型女子偶像组合SNH48。感谢您对我们的支持与关注！客服电话：400-617-6598 。客服服务时间：7x24小时",
+        "follow_count": 382,
+        "follow_me": false,
+        "followers_count": 4740360,
+        "following": false,
+        "gender": "f",
+        "id": 2689280541,
+        "mbrank": 6,
+        "mbtype": 11,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.180/a04b2a1djw8elz2yidkv7j20500503yg.jpg",
+        "profile_url": "http://m.weibo.cn/u/2689280541?uid=2689280541&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48",
+        "statuses_count": 12603,
+        "urank": 40,
+        "verified": true,
+        "verified_reason": "SNH48团体官方微博",
+        "verified_type": 0,
+        "verified_type_ext": 1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "索尼Xperia SL LT26ii",
+    "text": "呼呼呼//<a href='http://m.weibo.cn/n/SNH48-董芷依'>@SNH48-董芷依</a>:嘻嘻嘻//<a href='http://m.weibo.cn/n/SNH48-戴萌'>@SNH48-戴萌</a>:呵呵呵",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/zgy1W6h2p?mblogid=zgy1W6h2p&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

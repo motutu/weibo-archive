@@ -1,0 +1,110 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3555440640164551",
+  "mblog": {
+    "_created_at": 1363166568,
+    "attitudes_count": 11,
+    "bid": "znggo0GO3",
+    "comments_count": 10,
+    "created_at": "2013-03-13 17:22",
+    "favorited": false,
+    "id": "3555440640164551",
+    "isLongText": false,
+    "mblogtype": 0,
+    "raw_text": "转发微博",
+    "reposts_count": 7,
+    "retweeted_status": {
+      "attitudes_count": 20,
+      "bid": "znexkk8cg",
+      "bmiddle_pic": "http://ww2.sinaimg.cn/bmiddle/a04b2a1dgw1e2o26c6ef3j.jpg",
+      "comments_count": 99,
+      "created_at": "2013-03-13 12:59",
+      "favorited": false,
+      "id": "3555374264798072",
+      "isLongText": false,
+      "original_pic": "http://ww2.sinaimg.cn/large/a04b2a1dgw1e2o26c6ef3j.jpg",
+      "page_info": {
+        "content1": "",
+        "content2": "",
+        "page_pic": {
+          "url": "http://ww4.sinaimg.cn/thumbnail/b062dc5djw1f5d6wtu3uyj2050050jrf.jpg"
+        },
+        "page_title": "#SNH48#超级话题",
+        "page_url": "http://weibo.cn/sinaurl?containerid=1008086bd7cfe0bc1b396eede72d35bf433f4f&extparam=SNH48&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fm.weibo.cn%2Fp%2Findex%3Fcontainerid%3D1008086bd7cfe0bc1b396eede72d35bf433f4f%26extparam%3DSNH48%26luicode%3D10000011%26lfid%3D1076033053424305",
+        "type": "topic"
+      },
+      "pics": [
+        {
+          "geo": false,
+          "large": {
+            "geo": false,
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/a04b2a1dgw1e2o26c6ef3j.jpg"
+          },
+          "pid": "a04b2a1dgw1e2o26c6ef3j",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/a04b2a1dgw1e2o26c6ef3j.jpg"
+        }
+      ],
+      "reposts_count": 183,
+      "source": "微博 weibo.com",
+      "text": "<a class='k' href='http://m.weibo.cn/k/SNH48?from=feed'>#SNH48#</a>官方微信与周边商城平台即将双双启动，全面资讯尽在掌握；SNH48已经建立微信平台，大可以直接扫一扫我们的二维码，或直接添加微信账号China-SNH48，加入粉丝阵营。在不久的将来通过微信平台，大家可以掌握第一手的咨询。同时，SNH48的官方周边商城也即将正式上线，请大家继续支持我们SNH48哦！ ​​​",
+      "thumbnail_pic": "http://ww2.sinaimg.cn/thumbnail/a04b2a1dgw1e2o26c6ef3j.jpg",
+      "user": {
+        "cover_image_phone": "http://wx3.sinaimg.cn/crop.0.0.640.640.640/a04b2a1dly1fays2ry9chj20ku0kuwi00.jpg",
+        "description": "大家好，我们是大型女子偶像组合SNH48。感谢您对我们的支持与关注！客服电话：400-617-6598 。客服服务时间：7x24小时",
+        "follow_count": 382,
+        "follow_me": false,
+        "followers_count": 4740086,
+        "following": false,
+        "gender": "f",
+        "id": 2689280541,
+        "mbrank": 6,
+        "mbtype": 11,
+        "profile_image_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.180/a04b2a1djw8elz2yidkv7j20500503yg.jpg",
+        "profile_url": "http://m.weibo.cn/u/2689280541?uid=2689280541&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "SNH48",
+        "statuses_count": 12599,
+        "urank": 40,
+        "verified": true,
+        "verified_reason": "SNH48团体官方微博",
+        "verified_type": 0,
+        "verified_type_ext": 1
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "索尼Xperia SL LT26ii",
+    "text": "转发微博",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/znggo0GO3?mblogid=znggo0GO3&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

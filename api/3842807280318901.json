@@ -1,0 +1,274 @@
+{
+  "card_type": 9,
+  "itemid": "1076033053424305_-_3842807280318901",
+  "mblog": {
+    "_created_at": 1431680114,
+    "attitudes_count": 728,
+    "bid": "ChXC01kXz",
+    "comments_count": 123,
+    "created_at": "2015-05-15 16:55",
+    "favorited": false,
+    "id": "3842807280318901",
+    "isLongText": false,
+    "mblogtype": 0,
+    "pid": 3842794571658766,
+    "raw_text": "弹幕，感觉也是一个拼手速的时刻啊～[doge][doge][doge] //@SNH48:想问问什么呢？#盛夏好声音# MV拍摄的幕后故事？备战#SNH48第2届总选举# 的心情？5月17日19：30，一起来玩弹幕吧~~",
+    "reposts_count": 63,
+    "retweeted_status": {
+      "attitudes_count": 324,
+      "bid": "ChViJtzHn",
+      "bmiddle_pic": "http://ww3.sinaimg.cn/bmiddle/9a789c84jw1es4r3td0znj21kw1z4wuw.jpg",
+      "comments_count": 72,
+      "created_at": "2015-05-15 11:02",
+      "favorited": false,
+      "id": "3842718457048741",
+      "isLongText": false,
+      "original_pic": "http://ww3.sinaimg.cn/large/9a789c84jw1es4r3td0znj21kw1z4wuw.jpg",
+      "page_info": {
+        "content1": "《乐弹乐有料》第二期SNH48 预告片",
+        "content2": "",
+        "media_info": {
+          "stream_url": ""
+        },
+        "page_pic": {
+          "url": "http://vpic.video.qq.com/31911500/i00169xdbn7_1.jpg"
+        },
+        "page_title": "《乐弹乐有料》第二期SNH48 预告片",
+        "page_url": "http://weibo.cn/sinaurl?url=http%3A%2F%2Fv.qq.com%2Fpage%2Fi%2Fn%2F7%2Fi00169xdbn7.html&sinainternalbrowser=topnav&share_menu=1&url_type=39&object_type=video&pos=2&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fweibo.cn%2Fsinaurl%3Furl%3Dhttp%253A%252F%252Fv.qq.com%252Fpage%252Fi%252Fn%252F7%252Fi00169xdbn7.html%26sinainternalbrowser%3Dtopnav%26share_menu%3D1%26url_type%3D39%26object_type%3Dvideo%26pos%3D2%26luicode%3D10000011%26lfid%3D1076033053424305%26u%3Dhttp%253A%252F%252Fv.qq.com%252Fpage%252Fi%252Fn%252F7%252Fi00169xdbn7.html",
+        "type": "video"
+      },
+      "pics": [
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww3.sinaimg.cn/large/9a789c84jw1es4r3td0znj21kw1z4wuw.jpg"
+          },
+          "pid": "9a789c84jw1es4r3td0znj21kw1z4wuw",
+          "size": "orj360",
+          "url": "http://ww3.sinaimg.cn/orj360/9a789c84jw1es4r3td0znj21kw1z4wuw.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/9a789c84jw1es4r3z7xznj21kw1z47n4.jpg"
+          },
+          "pid": "9a789c84jw1es4r3z7xznj21kw1z47n4",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/9a789c84jw1es4r3z7xznj21kw1z47n4.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww4.sinaimg.cn/large/9a789c84jw1es4r3rvah5j21kw1z41by.jpg"
+          },
+          "pid": "9a789c84jw1es4r3rvah5j21kw1z41by",
+          "size": "orj360",
+          "url": "http://ww4.sinaimg.cn/orj360/9a789c84jw1es4r3rvah5j21kw1z41by.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 270,
+            "width": 470
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "1175",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww1.sinaimg.cn/large/9a789c84jw1es4r422j9ej21kw0wnwr9.jpg"
+          },
+          "pid": "9a789c84jw1es4r422j9ej21kw0wnwr9",
+          "size": "orj360",
+          "url": "http://ww1.sinaimg.cn/orj360/9a789c84jw1es4r422j9ej21kw0wnwr9.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 1800,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "3000",
+              "width": "600"
+            },
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/9a789c84jw1es4r3tjw9hj20go2bcncq.jpg"
+          },
+          "pid": "9a789c84jw1es4r3tjw9hj20go2bcncq",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/9a789c84jw1es4r3tjw9hj20go2bcncq.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 270,
+            "width": 405
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "666",
+              "width": "1000"
+            },
+            "size": "large",
+            "url": "http://ww2.sinaimg.cn/large/9a789c84jw1es4r42nmr3j20rs0iidl7.jpg"
+          },
+          "pid": "9a789c84jw1es4r42nmr3j20rs0iidl7",
+          "size": "orj360",
+          "url": "http://ww2.sinaimg.cn/orj360/9a789c84jw1es4r42nmr3j20rs0iidl7.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww4.sinaimg.cn/large/9a789c84jw1es4r3x78uzj21kw1z4qqn.jpg"
+          },
+          "pid": "9a789c84jw1es4r3x78uzj21kw1z4qqn",
+          "size": "orj360",
+          "url": "http://ww4.sinaimg.cn/orj360/9a789c84jw1es4r3x78uzj21kw1z4qqn.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww4.sinaimg.cn/large/9a789c84jw1es4r3vbo0dj21kw1z4wzu.jpg"
+          },
+          "pid": "9a789c84jw1es4r3vbo0dj21kw1z4wzu",
+          "size": "orj360",
+          "url": "http://ww4.sinaimg.cn/orj360/9a789c84jw1es4r3vbo0dj21kw1z4wzu.jpg"
+        },
+        {
+          "geo": {
+            "croped": false,
+            "height": 450,
+            "width": 360
+          },
+          "large": {
+            "geo": {
+              "croped": false,
+              "height": "2560",
+              "width": "2048"
+            },
+            "size": "large",
+            "url": "http://ww3.sinaimg.cn/large/9a789c84jw1es4r3q8lstj21kw1z4anx.jpg"
+          },
+          "pid": "9a789c84jw1es4r3q8lstj21kw1z4anx",
+          "size": "orj360",
+          "url": "http://ww3.sinaimg.cn/orj360/9a789c84jw1es4r3q8lstj21kw1z4anx.jpg"
+        }
+      ],
+      "reposts_count": 189,
+      "source": "微博 weibo.com",
+      "text": "【弹幕预告】5月17日晚19:30，美少女天团<a href='http://m.weibo.cn/n/SNH48'>@SNH48</a> 超人气成员<a href='http://m.weibo.cn/n/SNH48-莫寒'>@SNH48-莫寒</a> <a href='http://m.weibo.cn/n/SNH48-徐_晨辰'>@SNH48-徐_晨辰</a> <a href='http://m.weibo.cn/n/SNH48-孔肖吟'>@SNH48-孔肖吟</a> <a href='http://m.weibo.cn/n/SNH48-温晶婕'>@SNH48-温晶婕</a> <a href='http://m.weibo.cn/n/SNH48-孙芮'>@SNH48-孙芮</a> <a href='http://m.weibo.cn/n/SNH48-陈观慧'>@SNH48-陈观慧</a> 要来企鹅家玩弹幕啦！<i class=\"face face_2 icon_5\">[太开心]</i>具体玩法戳图5~<i class=\"face face_3 icon_10\">[来]</i>开启你的脑洞，问出你最感兴趣的问题，这个周日，六位美少女与你不见不散~<i class=\"face face_1 icon_4\">[爱你]</i><a data-url=\"http://t.cn/R2hNiTO\" target=\"_blank\" href=\"http://weibo.cn/sinaurl?url=http%3A%2F%2Fv.qq.com%2Fpage%2Fi%2Fn%2F7%2Fi00169xdbn7.html&sinainternalbrowser=topnav&share_menu=1&url_type=39&object_type=video&pos=1&luicode=10000011&lfid=1076033053424305&u=http%3A%2F%2Fv.qq.com%2Fpage%2Fi%2Fn%2F7%2Fi00169xdbn7.html&ep=ChViJtzHn%2C2591595652%2CChViJtzHn%2C2591595652\" class=\"\"><span class=\"url-icon\"><img src=\"https://h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_video_default.png\"></span></i><span class=\"surl-text\">《乐弹乐有料》第二期SNH48 预告片</a> ​​​",
+      "thumbnail_pic": "http://ww3.sinaimg.cn/thumbnail/9a789c84jw1es4r3td0znj21kw1z4wuw.jpg",
+      "user": {
+        "cover_image_phone": "http://ww4.sinaimg.cn/crop.0.0.0.640.640/6ce2240djw1e9uwue857ij20hs0hsjuk.jpg",
+        "description": "腾讯视频（v.qq.com）定位于中国领先的综合视频门户，内容以电影、电视剧、综艺为主，同时发力诸多维度频道运营，最大限度贴合用户在线视频观看需要。",
+        "follow_count": 1353,
+        "follow_me": false,
+        "followers_count": 2711268,
+        "following": false,
+        "gender": "m",
+        "id": 2591595652,
+        "mbrank": 4,
+        "mbtype": 12,
+        "profile_image_url": "http://tva1.sinaimg.cn/crop.0.0.511.511.180/9a789c84jw1f8qfspjojpj20e80e8aao.jpg",
+        "profile_url": "http://m.weibo.cn/u/2591595652?uid=2591595652&luicode=10000011&lfid=1076033053424305",
+        "screen_name": "腾讯视频",
+        "statuses_count": 32315,
+        "urank": 38,
+        "verified": true,
+        "verified_reason": "腾讯视频官方微博",
+        "verified_type": 3,
+        "verified_type_ext": 0
+      },
+      "visible": {
+        "list_id": 0,
+        "type": 0
+      }
+    },
+    "source": "iPad客户端",
+    "text": "弹幕，感觉也是一个拼手速的时刻啊～<i class=\"face face_1 icon_20\">[doge]</i><i class=\"face face_1 icon_20\">[doge]</i><i class=\"face face_1 icon_20\">[doge]</i> //<a href='http://m.weibo.cn/n/SNH48'>@SNH48</a>:想问问什么呢？<a class='k' href='http://m.weibo.cn/k/盛夏好声音?from=feed'>#盛夏好声音#</a> MV拍摄的幕后故事？备战<a class='k' href='http://m.weibo.cn/k/SNH48第2届总选举?from=feed'>#SNH48第2届总选举#</a> 的心情？5月17日19：30，一起来玩弹幕吧~~",
+    "user": {
+      "cover_image_phone": "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+      "description": "momo哒！~合作联系，商务：business@snh48.com 021-66075351 影视：yingshi@snh48.com 021-66078718*819 综艺：zongyi@snh48.com 021-66078718*821",
+      "follow_count": 201,
+      "follow_me": false,
+      "followers_count": 475619,
+      "following": false,
+      "gender": "f",
+      "id": 3053424305,
+      "mbrank": 6,
+      "mbtype": 12,
+      "profile_image_url": "http://tva4.sinaimg.cn/crop.6.0.499.499.180/b5ff8eb1jw8f9g0xrj1doj20e80dvdg7.jpg",
+      "profile_url": "http://m.weibo.cn/u/3053424305?uid=3053424305&luicode=10000011&lfid=1076033053424305",
+      "screen_name": "SNH48-莫寒",
+      "statuses_count": 1910,
+      "urank": 37,
+      "verified": true,
+      "verified_reason": "人气偶像团体SNH48成员 莫寒",
+      "verified_type": 0,
+      "verified_type_ext": 0
+    },
+    "visible": {
+      "list_id": 0,
+      "type": 0
+    }
+  },
+  "openurl": "",
+  "scheme": "http://m.weibo.cn/status/ChXC01kXz?mblogid=ChXC01kXz&luicode=10000011&lfid=1076033053424305",
+  "show_type": 0
+}

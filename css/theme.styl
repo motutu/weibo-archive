@@ -1,0 +1,137 @@
+bg-color = #fbe9f1
+nav-right-color = #f3bed5
+highlight-bg-color = #fcf2f8
+orig-status-bg-color = #f7d4e3
+hr-color = #eb93b9
+img-placeholder-color = #f6cbde
+dim-color = #888
+font = 16px "Times New Roman", Times, "Songti SC", SimSum, serif
+
+with-bottom-border()
+  border-bottom solid 1px
+
+no-bottom-border()
+  border-bottom none
+
+emojis()
+  & img
+    width 18px
+    height 18px
+    position relative
+    bottom 1px
+
+body
+  margin 50px auto 30px auto
+  width 620px
+  font font
+  text-align justify
+  background bg-color
+
+h1
+  text-align center
+  font-size 140%
+
+a
+  color inherit
+  text-decoration none
+  with-bottom-border()
+
+  &.fancybox-close
+    no-bottom-border()
+
+hr
+  margin 0 10px
+  border 0
+  border-top 1px solid hr-color
+
+img
+  vertical-align middle
+
+.left
+  float left
+
+.right
+  float right
+
+.clear:after
+  content ""
+  display block
+  height 0
+  clear both
+  visibility hidden
+
+.clickable
+  with-bottom-border()
+  &:hover
+    cursor pointer
+
+.nav-right
+  position fixed
+  left calc(50% + 360px)
+  top calc(50% - 42px)
+  font-size 110%
+  line-height 160%
+  color nav-right-color
+  & a
+    no-bottom-border()
+
+.info-nav-bar
+  margin 5px 10px
+  font-size 80%
+  &-nav
+    margin-left: 3px
+
+.status
+  padding 8px 10px
+  &.highlight
+    background highlight-bg-color
+    box-shadow 0 0 2px 1px hr-color
+
+.weibo-link
+  font-size 75%
+  color dim-color
+  & a
+    no-bottom-border()
+
+.status-text
+  margin 5px 0
+  emojis()
+
+.orig-post
+  padding 5px 10px
+  background orig-status-bg-color
+  emojis()
+
+.gallery
+  margin 7px 0 5px 0
+
+  &.grid1
+    width 122px
+  &.grid2, &.grid4
+    width 244px
+  &.standalone // on /gallery
+    margin 10px auto
+    width 610px
+  width 366px // default
+
+  & a
+    float left
+    padding 1px
+    no-bottom-border()
+
+  & img
+    width 120px
+    height 120px
+    // Color of rectangle and alt text of not-yet-loaded images
+    color img-placeholder-color
+    background img-placeholder-color
+
+.fancybox
+  position relative
+  & .gif-indicator
+    position absolute
+    left 5%
+    top 5%
+    font-family Helvetica, Arial, sans-serif
+    font-size 12px
+    color white
