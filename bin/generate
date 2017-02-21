@@ -26,7 +26,13 @@ def generate_page(template, path, **kwargs):
 
 def generate_index():
     os.makedirs(config.builddir, exist_ok=True)
-    os.symlink('1.html', os.path.join(config.builddir, 'index.html'))
+    indexpath = os.path.join(config.builddir, 'index.html')
+    if os.path.islink(indexpath) and os.readlink(indexpath) == '1.html':
+        return
+    elif os.path.exists(indexpath):
+        os.remove(indexpath)
+    logger.info('linking index.html => 1.html')
+    os.symlink('1.html', indexpath)
 
 def generate_all(statuses):
     generate_page('all.html', 'all.html', statuses=statuses)
