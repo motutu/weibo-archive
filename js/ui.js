@@ -114,9 +114,15 @@ $(function () {
       $document.on('keypress.fancybox-open-original', function (e) {
         var key = String.fromCharCode(e.which)
         switch (key) {
-          case 'O':
+          case 'i':
             $('img.fancybox-image').closest('a').get(0).click()
             break
+          case 'O':
+            // Open original status if title contains such link
+            var titleLink = $('div.fancybox-title a').get(0)
+            if (titleLink.click) {
+              titleLink.click()
+            }
         }
       })
     },
@@ -152,9 +158,17 @@ $(function () {
   for (var ch = 97; ch <= 122; ch++) {
     Mousetrap.bind('g ' + String.fromCharCode(ch), null)
   }
+  // g h => /
+  Mousetrap.bind('g h', function () {
+    window.location = '/'
+  })
   // g A => /all
   Mousetrap.bind('g A', function () {
     window.location = '/all'
+  })
+  // g G => /gallery
+  Mousetrap.bind('g G', function () {
+    window.location = '/gallery'
   })
   // G, b => bottom
   Mousetrap.bind(['G', 'b'], function () {
@@ -207,7 +221,7 @@ $(function () {
     // Open image in currently highlighted status if the status is currently on screen
     if ($highlighted.length > 0 && $highlighted.onScreen()) {
       $highlighted.find('.gallery a').first().click()
-      return
+      return false
     }
     // Open the first at least 3/4 visible image (and highlight the corresponding status)
     var viewportTop = $window.scrollTop()
@@ -218,10 +232,23 @@ $(function () {
       return top >= viewportTop - 30 && bottom <= viewportBottom + 30
     }).first()
     if (img.length === 0) {
-      return
+      return false
     }
     img.closest('.status').highlight()
     img.click()
+    return false
+  })
+  // O => open original status
+  Mousetrap.bind('O', function () {
+    var $highlighted = $('.status.highlight')
+    // Open the original page of the currently highlighted status if it is on screen
+    if ($highlighted.length > 0 && $highlighted.onScreen()) {
+      $highlighted.find('.weibo-link a').get(0).click()
+      return false
+    }
+    // Highlight top visible status and open original page
+    topVisibleStatus().highlight().find('.weibo-link a').get(0).click()
+    return false
   })
 
   // Record scroll position upon unload
