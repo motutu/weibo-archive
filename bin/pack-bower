@@ -8,7 +8,6 @@ cat $root/bower_components/jquery/dist/jquery.min.js >$js_output
 uglifyjs \
     $root/bower_components/fancybox/source/jquery.fancybox.js \
     $root/bower_components/js-cookie/src/js.cookie.js \
-    $root/bower_components/jquery_lazyload/jquery.lazyload.js \
     $root/bower_components/mousetrap/mousetrap.js \
     $root/bower_components/mousetrap/plugins/pause/mousetrap-pause.js \
     -c -m \

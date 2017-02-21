@@ -36,14 +36,6 @@
 
 
 {%- macro fancybox_image(filename, custom_data=None) -%}
-{%- set src -%}
-  {%- if LAZYLOAD -%}
-    class="lazy" data-original
-  {%- else -%}
-    src
-  {%- endif -%}
-{%- endset -%}
-
 {%- if LOCAL_IMAGES -%}
   {%- set large_image_path = filename|localimgpath('large') -%}
   {%- set thumb180_image_path = filename|localimgpath('thumb180') -%}
@@ -53,7 +45,7 @@
 {%- endif -%}
 
 <a href="{{ large_image_path }}" class="fancybox"{% if custom_data %} {{ custom_data }}{% endif %}>
-  <img {{ src }}="{{ thumb180_image_path }}" alt="{{ filename }}">
+  <img src="{{ thumb180_image_path }}" alt="{{ filename }}">
 </a>
 {%- endmacro -%}
 

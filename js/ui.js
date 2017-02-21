@@ -70,15 +70,6 @@ $(function () {
   // Scroll to last recorded position
   $window.scrollTop(Cookies.get('scroll'))
 
-  // Lazyload, if applicable
-  $('img.lazy').lazyload({
-    threshold: 800,
-    // Smallest possible PNG file
-    // https://kidsreturn.org/2011/04/smallest-possible-1x1-transparent-gif-and-png/
-    // http://garethrees.org/2007/11/14/pngcrush/
-    placeholder: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=='
-  })
-
   // Fancybox
   // Add data-fancybox-group to fancybox images
   $('.status').each(function (i, e) {

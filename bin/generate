@@ -10,7 +10,7 @@ HERE = os.path.dirname(os.path.realpath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
 
-from lib import config, jinjaenv
+from lib import config
 from lib.db import Status, filter_statuses, parse_and_save_all_existing_statuses
 from lib.jinjaenv import JINJAENV
 from lib.logger import logger
@@ -29,8 +29,7 @@ def generate_index():
     os.symlink('1.html', os.path.join(config.builddir, 'index.html'))
 
 def generate_all(statuses):
-    with jinjaenv.setglobal('LAZYLOAD', True):
-        generate_page('all.html', 'all.html', statuses=statuses)
+    generate_page('all.html', 'all.html', statuses=statuses)
 
 def generate_paginated(statuses):
     total = len(statuses)
@@ -48,8 +47,7 @@ def generate_gallery(statuses):
         status.url,
         image,
     ) for status in statuses for image in status.images.split()]
-    with jinjaenv.setglobal('LAZYLOAD', True):
-        generate_page('gallery.html', 'gallery.html', images=images)
+    generate_page('gallery.html', 'gallery.html', images=images)
 
 def main():
     parser = argparse.ArgumentParser()
