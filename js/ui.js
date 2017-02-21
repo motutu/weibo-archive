@@ -67,8 +67,10 @@ $(function () {
     }).last()
   }
 
-  // Scroll to last recorded position
-  $window.scrollTop(Cookies.get('scroll'))
+  // Scroll to last recorded position (except on homepage)
+  if (window.location.pathname !== '/') {
+    $window.scrollTop(Cookies.get('scroll'))
+  }
 
   // Fancybox
   // Add data-fancybox-group to fancybox images
