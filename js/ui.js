@@ -225,7 +225,7 @@ $(function () {
   })
 
   // Record scroll position upon unload
-  $window.on('unload', function () {
+  $window.on('beforeunload', function () {
     Cookies.set('scroll', $window.scrollTop(), {path: window.location.pathname})
   })
 })
