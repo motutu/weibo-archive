@@ -44,8 +44,12 @@
   {%- set thumb180_image_path = filename|sinaimgpath('thumb180') -%}
 {%- endif -%}
 
-<a href="{{ large_image_path }}" class="fancybox"{% if custom_data %} {{ custom_data }}{% endif %}>
-  <img src="{{ thumb180_image_path }}" alt="{{ filename }}">
+<a href="{% if LOCAL_IMAGES %}{{ filename|localimgpath('large') }}{% else %}{{ filename|sinaimgpath('large') }}{% endif %}" class="fancybox"{% if custom_data %} {{ custom_data }}{% endif %}>
+  {%- if LOCAL_IMAGES %}
+  <img src="{{ filename|localimgpath('thumb120') }}" srcset="{{ filename|localimgpath('thumb240') }} 2x, {{ filename|localimgpath('thumb360') }} 3x" alt="{{ filename }}">
+  {%- else %}
+  <img src="{{ filename|sinaimgpath('thumb180') }}" alt="{{ filename }}">
+  {%- endif %}
 </a>
 {%- endmacro -%}
 

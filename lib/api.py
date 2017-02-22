@@ -5,6 +5,7 @@ import json
 import os
 import random
 import re
+import subprocess
 
 from . import config, db
 from .config import session
@@ -17,6 +18,7 @@ ROOT = os.path.dirname(HERE)
 APIDIR = os.path.join(ROOT, 'api')
 APIDIR_COMPLETE = os.path.join(APIDIR, 'complete')
 IMAGEDIR = os.path.join(ROOT, 'images')
+THUMBNAILER = os.path.join(ROOT, 'bin', 'thumbnail')
 
 os.makedirs(APIDIR_COMPLETE, exist_ok=True)
 os.makedirs(os.path.join(IMAGEDIR, 'large'), exist_ok=True)
@@ -47,6 +49,17 @@ def ensure_sinaimg(basename):
                     fp.write(chunk)
         except Exception:
             logger.error(f'failed to download {url}')
+
+    for res in ['thumb120', 'thumb240', 'thumb360']:
+        localpath = os.path.join(IMAGEDIR, res, basename)
+        if not os.path.exists(localpath):
+            break
+    else:
+        # All thumbnails have already been generated
+        return
+    # Generate thumbnails
+    logger.info(f'generating thumbnails for {basename}')
+    subprocess.run([THUMBNAILER, basename])
 
 MWEIBOCN_STATUS_LINK = re.compile(r'^http://m\.weibo\.cn/status/(?P<basename>\w+)\?.*')
 
