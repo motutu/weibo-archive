@@ -82,10 +82,12 @@ $(function () {
   $('.gallery.standalone a.fancybox').attr('data-fancybox-group', 'g')
 
   $('.fancybox').fancybox({
-    nextClick: false,
-    nextEffect: 'none',
     padding: 0,
+    nextClick: true,
+    arrows: false,
+    nextEffect: 'none',
     prevEffect: 'none',
+    scrolling: 'hidden',
     keys: {
       prev: [65, 188, 37], // a, ','/<, left
       next: [68, 190, 39], // d, '.'/>, right
@@ -93,7 +95,7 @@ $(function () {
     },
     helpers: {
       overlay: {
-        locked: false
+        locked: true
       }
     },
     beforeLoad: function () {
@@ -104,18 +106,31 @@ $(function () {
       } else {
         this.title = (this.index + 1) + ' / ' + this.group.length
       }
+      // Add an "open original" link
+      var original = this.element.attr('href')
+      this.tpl.wrap = `
+<div class="fancybox-wrap" tabIndex="-1">
+  <div class="fancybox-title fancybox-title-outside-wrap view-original-link">
+    <a class="fancybox-tool" href="${original}" target="_blank">查看原图</a>
+  </div>
+  <div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div>
+</div>`
       Mousetrap.pause()
     },
     afterShow: function () {
-      $('img.fancybox-image').wrap(function () {
-        return $('<a></a>', {href: this.src, target: '_blank'})
-      })
+      $('.fancybox-wrap')
+        .on('swipeleft', function () {
+          $.fancybox.next()
+        })
+        .on('swiperight', function () {
+          $.fancybox.prev()
+        })
       $document.off('keypress.fancybox-open-original')
       $document.on('keypress.fancybox-open-original', function (e) {
         var key = String.fromCharCode(e.which)
         switch (key) {
           case 'i':
-            $('img.fancybox-image').closest('a').get(0).click()
+            $('a.fancybox-tool').get(0).click()
             break
           case 'O':
             // Open original status if title contains such link

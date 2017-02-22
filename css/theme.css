@@ -124,6 +124,10 @@ img {
 .fancybox {
   position: relative;
 }
+.fancybox-tool {
+  color: #888;
+  border-bottom: none;
+}
 .fancybox .gif-indicator {
   position: absolute;
   left: 5%;
