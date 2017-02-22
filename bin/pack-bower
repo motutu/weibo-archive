@@ -2,18 +2,19 @@
 
 here=$0:A:h
 root=$here:h
+bower=$root/bower_components
 
 js_output=$root/js/bower_packed.js
-cat $root/bower_components/jquery/dist/jquery.min.js >$js_output
+cat $bower/jquery/dist/jquery.min.js >$js_output
 uglifyjs \
-    $root/bower_components/fancybox/source/jquery.fancybox.js \
-    $root/bower_components/js-cookie/src/js.cookie.js \
-    $root/bower_components/mousetrap/mousetrap.js \
-    $root/bower_components/mousetrap/plugins/pause/mousetrap-pause.js \
+    $bower/fancybox/source/jquery.fancybox.js \
+    $bower/js-cookie/src/js.cookie.js \
+    $bower/mousetrap/mousetrap.js \
+    $bower/mousetrap/plugins/pause/mousetrap-pause.js \
     -c -m \
     >> $js_output
 
 css_output=$root/css/bower_packed.css
-cat $root/bower_components/normalize-css/normalize.css \
-    $root/bower_components/fancybox/source/jquery.fancybox.css \
+cat $bower/normalize-css/normalize.css \
+    $bower/fancybox/source/jquery.fancybox.css \
     | cleancss -o $css_output
