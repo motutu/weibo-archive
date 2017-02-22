@@ -135,7 +135,7 @@ $(function () {
           case 'O':
             // Open original status if title contains such link
             var titleLink = $('div.fancybox-title a').get(0)
-            if (titleLink.click) {
+            if (titleLink) {
               titleLink.click()
             }
         }
@@ -198,7 +198,7 @@ $(function () {
   // a, ',', <, left => previous page
   Mousetrap.bind(['a', ',', '<', 'left'], function () {
     var prev = $('.prev a').get(0)
-    if (prev.click) {
+    if (prev) {
       prev.click()
     }
     return false
@@ -206,7 +206,7 @@ $(function () {
   // d, '.', >, right => next page
   Mousetrap.bind(['d', '.', '>', 'right'], function () {
     var next = $('.next a').get(0)
-    if (next.click) {
+    if (next) {
       next.click()
     }
     return false
