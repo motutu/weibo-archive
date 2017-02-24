@@ -104,31 +104,28 @@ $(function () {
 
   // Hide/show nav on scroll
   // Credit: https://jsfiddle.net/mariusc23/s6mLJ/31/
-  var scrolled = false
-  var lastScrollTop = 0
-  $window.scroll(function () {
-    scrolled = true
-  })
-  setInterval(function () {
-    if (isMobileLayout() && scrolled) {
-      var scrollTop = $window.scrollTop()
-      // Scrolled more than 20 pixels
-      if (Math.abs(lastScrollTop - scrollTop) > 20) {
-        if (scrollTop > lastScrollTop && scrollTop > $nav.height()) {
-          // Scrolling down (past the top nav bar)
-          $nav.slideUp(100)
-        } else {
-          // Scrolling up
-          if (scrollTop + $window.height() < $document.height()) {
-            // Exclude the case of bouncing at the bottom of page
-            $nav.slideDown(100)
+  ;(function () {
+    var lastScrollTop = 0
+    $window.scroll($.throttle(100, function () {
+      if (isMobileLayout()) {
+        var scrollTop = $window.scrollTop()
+        // Scrolled more than 20 pixels
+        if (Math.abs(lastScrollTop - scrollTop) > 20) {
+          if (scrollTop > lastScrollTop && scrollTop > $nav.height()) {
+            // Scrolling down (past the top nav bar)
+            $nav.slideUp(100)
+          } else {
+            // Scrolling up
+            if (scrollTop + $window.height() < $document.height()) {
+              // Exclude the case of bouncing at the bottom of page
+              $nav.slideDown(100)
+            }
           }
+          lastScrollTop = scrollTop
         }
-        lastScrollTop = scrollTop
       }
-      scrolled = false
-    }
-  }, 100)
+    }))
+  })()
 
   // Fancybox
   // Add data-fancybox-group to fancybox images
