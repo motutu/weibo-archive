@@ -76,6 +76,13 @@ $(function () {
   $('.menu-toggle').click(function () {
     $('.menu').slideToggle(300)
   })
+  $window.resize(function () {
+    if ($window.width() >= 880) {
+      $('.menu').show()
+    } else {
+      $('.menu').hide()
+    }
+  })
 
   // Fancybox
   // Add data-fancybox-group to fancybox images
