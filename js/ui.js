@@ -127,93 +127,109 @@ $(function () {
     }))
   })()
 
-  // Fancybox
-  // Add data-fancybox-group to fancybox images
-  $('.status').each(function (i, e) {
-    $(e).find('.gallery a.fancybox').attr('data-fancybox-group', $(e).attr('id'))
-  })
-
-  // On /gallery, link all gallery images to the same group
-  $('.gallery.standalone a.fancybox').attr('data-fancybox-group', 'g')
-
-  $('.fancybox').fancybox({
-    padding: 0,
-    nextClick: true,
-    arrows: false,
-    nextEffect: 'none',
-    prevEffect: 'none',
-    scrolling: 'hidden',
-    keys: {
-      prev: [65, 188, 37], // a, ','/<, left
-      next: [68, 190, 39], // d, '.'/>, right
-      close: [27, 79, 81] // esc, o, q
-    },
-    helpers: {
-      overlay: {
-        locked: true
-      }
-    },
-    beforeLoad: function () {
-      if (window.location.pathname.match(/\/gallery(\.html)?/)) {
-        var date = this.element.attr('data-date').replace(/(\d{4})-(\d{2})-(\d{2})/, '$1年$2月$3日')
-        var url = this.element.attr('data-status-url')
-        this.title = `<a href="${url}" target="_blank">${date}</a>`
-      } else {
-        this.title = (this.index + 1) + ' / ' + this.group.length
-      }
-      // Add an "open original" link
-      var original = this.element.attr('href')
-      this.tpl.wrap = `
+  // Extend jQuery with fancybox and status initializer
+  $.fn.extend({
+    initFancybox : function () {
+      this.fancybox({
+        padding: 0,
+        nextClick: true,
+        arrows: false,
+        nextEffect: 'none',
+        prevEffect: 'none',
+        scrolling: 'hidden',
+        keys: {
+          prev: [65, 188, 37], // a, ','/<, left
+          next: [68, 190, 39], // d, '.'/>, right
+          close: [27, 79, 81] // esc, o, q
+        },
+        helpers: {
+          overlay: {
+            locked: true
+          }
+        },
+        beforeLoad: function () {
+          if (window.location.pathname.match(/\/gallery(\.html)?/)) {
+            var date = this.element.attr('data-date').replace(/(\d{4})-(\d{2})-(\d{2})/, '$1年$2月$3日')
+            var url = this.element.attr('data-status-url')
+            this.title = `<a href="${url}" target="_blank">${date}</a>`
+          } else {
+            this.title = (this.index + 1) + ' / ' + this.group.length
+          }
+          // Add an "open original" link
+          var original = this.element.attr('href')
+          this.tpl.wrap = `
 <div class="fancybox-wrap" tabIndex="-1">
   <div class="fancybox-title fancybox-title-outside-wrap view-original-link">
     <a class="fancybox-tool" href="${original}" target="_blank">查看原图</a>
   </div>
   <div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div>
 </div>`
-      Mousetrap.pause()
-    },
-    afterShow: function () {
-      $('.fancybox-wrap')
-        .on('swipeleft', function () {
-          $.fancybox.next()
-        })
-        .on('swiperight', function () {
-          $.fancybox.prev()
-        })
-      $document.off('keypress.fancybox-open-original')
-      $document.on('keypress.fancybox-open-original', function (e) {
-        var key = String.fromCharCode(e.which)
-        switch (key) {
-          case 'i':
-            $('a.fancybox-tool').get(0).click()
-            break
-          case 'O':
-            // Open original status if title contains such link
-            var titleLink = $('div.fancybox-title a').get(0)
-            if (titleLink) {
-              titleLink.click()
+          Mousetrap.pause()
+        },
+        afterShow: function () {
+          $('.fancybox-wrap')
+            .on('swipeleft', function () {
+              $.fancybox.next()
+            })
+            .on('swiperight', function () {
+              $.fancybox.prev()
+            })
+          $document.off('keypress.fancybox-open-original')
+          $document.on('keypress.fancybox-open-original', function (e) {
+            var key = String.fromCharCode(e.which)
+            switch (key) {
+              case 'i':
+                $('a.fancybox-tool').get(0).click()
+                break
+              case 'O':
+                // Open original status if title contains such link
+                var titleLink = $('div.fancybox-title a').get(0)
+                if (titleLink) {
+                  titleLink.click()
+                }
             }
+          })
+        },
+        beforeClose: function () {
+          $document.off('keypress.fancybox-open-original')
+        },
+        afterClose: function () {
+          Mousetrap.unpause()
         }
       })
+
+      // Gif overlay
+      this.filter('[href$=".gif"]').append($('<div class="gif-indicator">GIF</div>'))
+
+      return this
     },
-    beforeClose: function () {
-      $document.off('keypress.fancybox-open-original')
-    },
-    afterClose: function () {
-      Mousetrap.unpause()
+
+    initStatus : function () {
+      this.each(function (i, e) {
+        var $status = $(e)
+        if (!$status.hasClass('status')) {
+          console.error('Not a status:', e)
+        }
+
+        // Add data-fancybox-group to fancybox images, and initialize fancybox
+        var statusId = $status.attr('id')
+        $status.find('.fancybox').attr('data-fancybox-group', statusId).initFancybox()
+
+        // Click to highlight
+        $status.click(function () {
+          $(this).highlight()
+        })
+      })
+
+      return this
     }
   })
 
-  // Gif overlay
-  $('.fancybox[href$=".gif"]').append($('<div class="gif-indicator">GIF</div>'))
+  $('.status').initStatus()
 
   // Register click actions
   $('.back-to-top').click(function () {
     $window.scrollTop(0)
-  })
-
-  $('.status').click(function () {
-    $(this).highlight()
   })
 
   $document.click(function (e) {
@@ -222,6 +238,12 @@ $(function () {
       $('.status.highlight').dehighlight()
     }
   })
+
+  // Page specific
+  if (window.location.pathname === '/gallery') {
+    // Link all gallery images to the same group
+    $('.fancybox').attr('data-fancybox-group', 'g').initFancybox()
+  }
 
   // Keyboard shortcuts
   // Unregister g *
