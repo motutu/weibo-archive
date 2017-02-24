@@ -45,6 +45,10 @@ $(function () {
     }
   })
 
+  var isMobileLayout = function () {
+    return $window.width() < 880
+  }
+
   var topVisibleStatus = function () {
     var viewportTop = $window.scrollTop()
     var viewportBottom = viewportTop + $window.height()
@@ -76,11 +80,17 @@ $(function () {
   $('.menu-toggle').click(function () {
     $('.menu').slideToggle(300)
   })
+  $document.click(function (e) {
+    // Hide the dropdown menu when anything other than the toggle is clicked
+    if (isMobileLayout() && !$(e.target).hasClass('menu-toggle')) {
+      $('.menu').slideUp(300)
+    }
+  })
   $window.resize(function () {
-    if ($window.width() >= 880) {
-      $('.menu').show()
-    } else {
+    if (isMobileLayout()) {
       $('.menu').hide()
+    } else {
+      $('.menu').show()
     }
   })
 
