@@ -71,6 +71,12 @@ $(function () {
     }).last()
   }
 
+  // iOS Safari hack to work around the click-handler-not-firing bug
+  // http://stackoverflow.com/a/16006333
+  if (/iPad|iPhone|iPod/.test(window.navigator.userAgent)) {
+    $('body').css('cursor', 'pointer')
+  }
+
   // Scroll to last recorded position (except on homepage)
   if (window.location.pathname !== '/') {
     $window.scrollTop(Cookies.get('scroll'))
