@@ -159,6 +159,7 @@ nav a {
     width: 18px;
     padding: 4px 10px;
     display: block;
+    -webkit-tap-highlight-color: transparent;
   }
   nav .menu-toggle:before {
     display: block;
