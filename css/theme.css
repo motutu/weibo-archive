@@ -44,7 +44,7 @@ img {
 .clickable:hover {
   cursor: pointer;
 }
-.nav-right {
+nav {
   position: fixed;
   left: calc(50% + 360px);
   top: calc(50% - 42px);
@@ -52,7 +52,10 @@ img {
   line-height: 160%;
   color: #f3bed5;
 }
-.nav-right a {
+nav .menu-toggle {
+  display: none;
+}
+nav a {
   border-bottom: none;
 }
 .info-nav-bar {
@@ -141,11 +144,55 @@ img {
     width: 100%;
     max-width: 620px;
   }
-  .nav-right {
+  nav {
+    left: 0;
+    top: 0;
+    height: 32px;
+    width: 100%;
+    background: #e3689e;
+    z-index: 1;
+  }
+  nav .menu-toggle {
+    position: relative;
+    left: calc(50% - 310px);
+    height: 24px;
+    width: 18px;
+    padding: 4px 10px;
+    display: block;
+  }
+  nav .menu-toggle:before {
+    display: block;
+    content: "";
+    background-image: url("/assets/images/icons/hamburger.svg");
+    background-size: 18px 24px;
+    height: 24px;
+    width: 18px;
+  }
+  nav .menu-toggle:hover {
+    cursor: pointer;
+  }
+  nav .menu {
+    position: relative;
+    left: calc(50% - 300px);
+    width: 100px;
+    color: #fbe9f1;
+    text-align: center;
     display: none;
+  }
+  nav .menu div {
+    padding: 5px;
+    border-top: solid 1px rgba(255,255,255,0.5);
+    background: #e3689e;
+    background-clip: padding-box;
   }
 }
 @media screen and (max-width: 619px) {
+  nav .menu-toggle {
+    left: 0;
+  }
+  nav .menu {
+    left: 10px;
+  }
   .gallery.standalone {
     width: 488px;
   }

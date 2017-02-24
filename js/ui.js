@@ -72,6 +72,11 @@ $(function () {
     $window.scrollTop(Cookies.get('scroll'))
   }
 
+  // Dropdown menu
+  $('.menu-toggle').click(function () {
+    $('.menu').slideToggle(300)
+  })
+
   // Fancybox
   // Add data-fancybox-group to fancybox images
   $('.status').each(function (i, e) {

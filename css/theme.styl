@@ -1,10 +1,12 @@
 bg-color = #fbe9f1
-nav-right-color = #f3bed5
+nav-bg-color = #e3689e
+nav-text-color = #f3bed5
 highlight-bg-color = #fcf2f8
 orig-status-bg-color = #f7d4e3
 hr-color = #eb93b9
 img-placeholder-color = #f6cbde
 dim-color = #888
+translucent = rgba(255, 255, 255, 0.5)  // Use 50% transparency to emulate translucency
 font = 16px "Times New Roman", Times, "Songti SC", SimSum, serif
 
 with-bottom-border()
@@ -65,13 +67,15 @@ img
   &:hover
     cursor pointer
 
-.nav-right
+nav
   position fixed
   left calc(50% + 360px)
   top calc(50% - 42px)
   font-size 110%
   line-height 160%
-  color nav-right-color
+  color nav-text-color
+  .menu-toggle
+    display none
   a
     no-bottom-border()
 
@@ -143,10 +147,48 @@ img
   body
     width 100%
     max-width 620px
-  .nav-right
-    display none
+  nav
+    left 0
+    top 0
+    height 32px
+    width 100%
+    background nav-bg-color
+    z-index 1
+    .menu-toggle
+      position relative
+      left calc(50% - 310px)
+      height 24px
+      width 18px
+      padding 4px 10px
+      display block
+      &:before
+        display block
+        content ""
+        background-image url("/assets/images/icons/hamburger.svg")
+        background-size 18px 24px
+        height 24px
+        width 18px
+      &:hover
+        cursor pointer
+    .menu
+      position relative
+      left calc(50% - 300px)
+      width 100px
+      color bg-color
+      text-align center
+      display none
+      div
+        padding 5px
+        border-top solid 1px translucent
+        background nav-bg-color
+        background-clip padding-box
 
 @media screen and (max-width: 619px)
+  nav
+    .menu-toggle
+      left 0
+    .menu
+      left 10px
   .gallery.standalone
     width 488px
 
