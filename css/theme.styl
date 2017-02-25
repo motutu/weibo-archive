@@ -147,6 +147,24 @@ nav
     font-size 12px
     color white
 
+.loading
+  margin 10px 0
+  text-align center
+  font-size 120%
+  &:after
+    overflow hidden
+    display inline-block
+    vertical-align bottom
+    animation ellipsis steps(4,end) 1s infinite
+    content "\2026"  // U+2026 HORIZONTAL ELLIPSIS
+    width 0
+  &.fail:after
+    all initial
+
+@keyframes ellipsis
+  to
+    width 1.5em
+
 @media screen and (max-width: 879px)
   body
     padding-top 50px

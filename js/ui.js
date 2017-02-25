@@ -5,6 +5,7 @@
 $(function () {
   var $window = $(window)
   var $document = $(document)
+  var $body = $('body')
   var $nav = $('nav')
 
   $.fn.extend({
@@ -78,8 +79,8 @@ $(function () {
     $('body').css('cursor', 'pointer')
   }
 
-  // Scroll to last recorded position (except on homepage)
-  if (window.location.pathname !== '/') {
+  // Scroll to last recorded position (except on / and /inf)
+  if (window.location.pathname !== '/' && window.location.pathname !== '/inf') {
     $window.scrollTop(Cookies.get('scroll'))
   }
 
@@ -129,7 +130,7 @@ $(function () {
 
   // Extend jQuery with fancybox and status initializer
   $.fn.extend({
-    initFancybox : function () {
+    initFancybox: function () {
       this.fancybox({
         padding: 0,
         nextClick: true,
@@ -204,7 +205,7 @@ $(function () {
       return this
     },
 
-    initStatus : function () {
+    initStatus: function () {
       this.each(function (i, e) {
         var $status = $(e)
         if (!$status.hasClass('status')) {
@@ -243,6 +244,133 @@ $(function () {
   if (window.location.pathname === '/gallery') {
     // Link all gallery images to the same group
     $('.fancybox').attr('data-fancybox-group', 'g').initFancybox()
+  } else if (window.location.pathname === '/inf') {
+    ;(function () {
+      const totalPages = window.totalPages
+      if (!totalPages > 0) {
+        throw new Error('window.totalPages not found.')
+      }
+      delete window.totalPages
+      const totalStatuses = window.totalStatuses
+      if (!totalStatuses > 0) {
+        throw new Error('window.totalStatuses not found.')
+      }
+      delete window.totalStatuses
+      var page = 1
+      var statusCount = 0
+
+      var loadNextPage = function (options, successCallback, failureCallback) {
+        if (page > totalPages || statusCount >= totalStatuses) {
+          console.error('All statuses have been loaded.')
+          return
+        }
+
+        options = options || {}
+        var changeHash = options.changeHash || false
+        var scrollToTop = options.scrollToTop || false
+        var scrollToBottom = options.scrollToBottom || false
+        var animate = options.animate || false
+
+        var $anchor = $('main hr').last()
+        $anchor.attr('id', page)
+        $('.loading').remove()
+        $('<div class="loading">加载中</div>').insertAfter($anchor)
+
+        $.get(`/${page}`, function (html) {
+          var $dummy = $('<div>').html(html)
+          $dummy.find('main .status').first().prevAll().remove()
+          $dummy.find('main hr').last().nextAll().remove()
+          $dummy.find('.status').initStatus()
+
+          if (changeHash) {
+            window.location.hash = `#${page}`
+          }
+
+          $('.loading').remove()
+
+          $dummy.find('main > *').insertAfter($anchor)
+          $dummy.remove()
+
+          statusCount = $('.status').length
+          $('.info-nav-bar .left').text(`已加载${statusCount}/${totalStatuses}条状态`)
+
+          if (scrollToTop || scrollToBottom) {
+            var position
+            if (scrollToTop) {
+              position = $anchor.offset().top - 32
+            } else {
+              position = $document.height()
+            }
+            if (animate) {
+              $body.animate({scrollTop: position}, 300)
+            } else {
+              $window.scrollTop(position)
+            }
+          }
+
+          page += 1
+
+          if (page > totalPages || statusCount >= totalStatuses) {
+            $window.off('scroll.loadnext')
+          }
+
+          typeof successCallback === 'function' && successCallback()
+        }).fail(function () {
+          // AJAX failure
+          console.error(`Failed to fetch /${page}`)
+          $('.loading').addClass('fail').text('加载失败')
+
+          typeof failureCallback === 'function' && failureCallback()
+        })
+      }
+
+      var loadPages = function (count, successCallback, failureCallback) {
+        if (page + count > totalPages) {
+          console.error(`Cannot load ${count} pages; only ${totalPages - page} pages remain.`)
+          return
+        }
+
+        var recurse = function (remaining) {
+          if (remaining > 0) {
+            loadNextPage({scrollToBottom: true}, recurse.bind(null, remaining - 1), failureCallback)
+          } else if (remaining === 0) {
+            typeof successCallback === 'function' && successCallback()
+          }
+        }
+        recurse(count)
+      }
+
+      var registerLoadNextHandler = function () {
+        $window.on('scroll.loadnext', $.throttle(100, function () {
+          var scrollTop = $window.scrollTop()
+          if (scrollTop + $window.height() >= $document.height() - 500) {
+            // Skip if currently loading
+            if ($('.loading:not(.fail)').length === 0) {
+              loadNextPage({changeHash: true}, function () {
+                // Restore previous scroll position to prevent jumping around
+                $window.scrollTop(scrollTop)
+              })
+            }
+          }
+        }))
+      }
+
+      ;(function () {
+        var m = window.location.hash.match(/^#([1-9][0-9]*)$/)
+        if (m && parseInt(m[1]) <= totalPages) {
+          loadPages(
+            parseInt(m[1]) - 1,
+            function () {
+              loadNextPage({scrollToTop: true}, registerLoadNextHandler, registerLoadNextHandler)
+            },
+            registerLoadNextHandler
+          )
+        } else {
+          window.location.hash = ''
+          loadNextPage({changeHash: true}, registerLoadNextHandler, registerLoadNextHandler)
+        }
+      })()
+    })()
   }
 
   // Keyboard shortcuts

@@ -143,6 +143,22 @@ nav a {
   font-size: 12px;
   color: #fff;
 }
+.loading {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 120%;
+}
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis steps(4, end) 1s infinite;
+  content: "\2026";
+  width: 0;
+}
+.loading.fail:after {
+  all: initial;
+}
 @media screen and (max-width: 879px) {
   body {
     padding-top: 50px;
@@ -205,6 +221,26 @@ nav a {
 @media screen and (max-width: 487px) {
   .gallery.standalone {
     width: 366px;
+  }
+}
+@-moz-keyframes ellipsis {
+  to {
+    width: 1.5em;
+  }
+}
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.5em;
+  }
+}
+@-o-keyframes ellipsis {
+  to {
+    width: 1.5em;
+  }
+}
+@keyframes ellipsis {
+  to {
+    width: 1.5em;
   }
 }
 /*# sourceMappingURL=theme.css.map */
