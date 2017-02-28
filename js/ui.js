@@ -8,6 +8,10 @@ $(function () {
   var $body = $('body')
   var $nav = $('nav')
 
+  var isHome = window.location.pathname.match(/\/(index(\.html)?)?/)
+  var isGallery = window.location.pathname.match(/\/gallery(\.html)?/)
+  var isInf = window.location.pathname.match(/\/inf(\.html)?/)
+
   $.fn.extend({
     onScreen: function () {
       if (this.length === 0) {
@@ -81,7 +85,7 @@ $(function () {
 
   // Lazyload, if applicable
   $('img.lazy').lazyload({
-    threshold: (window.location.pathname === '/gallery') ? 480 : 800,
+    threshold: isGallery ? 480 : 800,
     // Smallest possible transparent PNG file
     // https://kidsreturn.org/2011/04/smallest-possible-1x1-transparent-gif-and-png/
     // http://garethrees.org/2007/11/14/pngcrush/
@@ -89,7 +93,7 @@ $(function () {
   })
 
   // Scroll to last recorded position (except on / and /inf)
-  if (window.location.pathname !== '/' && window.location.pathname !== '/inf') {
+  if (!isHome && !isInf) {
     $window.scrollTop(Cookies.get('scroll'))
   }
 
@@ -158,7 +162,7 @@ $(function () {
           }
         },
         beforeLoad: function () {
-          if (window.location.pathname.match(/\/gallery(\.html)?/)) {
+          if (isGallery) {
             var date = this.element.attr('data-date').replace(/(\d{4})-(\d{2})-(\d{2})/, '$1年$2月$3日')
             var url = this.element.attr('data-status-url')
             this.title = `<a href="${url}" target="_blank">${date}</a>`
@@ -250,10 +254,10 @@ $(function () {
   })
 
   // Page specific
-  if (window.location.pathname === '/gallery') {
+  if (isGallery) {
     // Link all gallery images to the same group
     $('.fancybox').attr('data-fancybox-group', 'g').initFancybox()
-  } else if (window.location.pathname === '/inf') {
+  } else if (isInf) {
     ;(function () {
       const totalPages = window.totalPages
       if (!totalPages > 0) {
