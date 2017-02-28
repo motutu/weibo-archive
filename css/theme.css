@@ -51,7 +51,7 @@ img {
 nav {
   position: fixed;
   left: calc(50% + 360px);
-  top: calc(50% - 42px);
+  top: calc(50% - 56px);
   font-size: 110%;
   line-height: 160%;
   color: #f3bed5;
