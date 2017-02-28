@@ -79,6 +79,15 @@ $(function () {
     $('body').css('cursor', 'pointer')
   }
 
+  // Lazyload, if applicable
+  $('img.lazy').lazyload({
+    threshold: (window.location.pathname === '/gallery') ? 480 : 800,
+    // Smallest possible transparent PNG file
+    // https://kidsreturn.org/2011/04/smallest-possible-1x1-transparent-gif-and-png/
+    // http://garethrees.org/2007/11/14/pngcrush/
+    placeholder: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=='
+  })
+
   // Scroll to last recorded position (except on / and /inf)
   if (window.location.pathname !== '/' && window.location.pathname !== '/inf') {
     $window.scrollTop(Cookies.get('scroll'))

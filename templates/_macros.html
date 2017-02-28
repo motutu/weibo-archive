@@ -36,19 +36,19 @@
 
 
 {%- macro fancybox_image(filename, custom_data=None) -%}
-{%- if LOCAL_IMAGES -%}
-  {%- set large_image_path = filename|localimgpath('large') -%}
-  {%- set thumb180_image_path = filename|localimgpath('thumb180') -%}
+{%- if LAZYLOAD -%}
+  {%- set src -%}class="lazy" data-original{%- endset -%}
+  {%- set srcset -%}data-srcset{%- endset -%}
 {%- else -%}
-  {%- set large_image_path = filename|sinaimgpath('large') -%}
-  {%- set thumb180_image_path = filename|sinaimgpath('thumb180') -%}
+  {%- set src -%}src{%- endset -%}
+  {%- set srcset -%}srcset{%- endset -%}
 {%- endif -%}
 
 <a href="{% if LOCAL_IMAGES %}{{ filename|localimgpath('large') }}{% else %}{{ filename|sinaimgpath('large') }}{% endif %}" class="fancybox"{% if custom_data %} {{ custom_data }}{% endif %}>
   {%- if LOCAL_IMAGES %}
-  <img src="{{ filename|localimgpath('thumb120') }}" srcset="{{ filename|localimgpath('thumb240') }} 2x, {{ filename|localimgpath('thumb360') }} 3x" alt="{{ filename }}">
+  <img {{ src }}="{{ filename|localimgpath('thumb120') }}" {{ srcset }}="{{ filename|localimgpath('thumb240') }} 2x, {{ filename|localimgpath('thumb360') }} 3x" alt="{{ filename }}">
   {%- else %}
-  <img src="{{ filename|sinaimgpath('thumb180') }}" alt="{{ filename }}">
+  <img {{ src }}="{{ filename|sinaimgpath('thumb180') }}" alt="{{ filename }}">
   {%- endif %}
 </a>
 {%- endmacro -%}

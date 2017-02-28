@@ -8,6 +8,7 @@ js_output=$root/js/bower_packed.js
 cat $bower/jquery/dist/jquery.min.js >$js_output
 uglifyjs \
     $bower/fancybox/source/jquery.fancybox.js \
+    $bower/jquery_lazyload/jquery.lazyload.js \
     $bower/js-cookie/src/js.cookie.js \
     $bower/jquery-throttle-debounce/jquery.ba-throttle-debounce.js \
     $bower/jquery.event.move/js/jquery.event.move.js \
