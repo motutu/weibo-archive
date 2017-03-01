@@ -140,6 +140,11 @@
 			return;
 		}
 
+		// Ignore right click
+		if ( e.originalEvent && e.originalEvent.button == 2 ) {
+			return;
+		}
+
 		e.stopPropagation();
 		e.preventDefault();
 
@@ -656,6 +661,11 @@
 
 		x = x - self.$wrap.offset().left;
 		y = y - self.$wrap.offset().top;
+
+		// Stop slideshow
+		if ( instance.SlideShow && instance.SlideShow.isActive ) {
+			instance.SlideShow.stop();
+		}
 
 		if ( !$.fancybox.isTouch ) {
 

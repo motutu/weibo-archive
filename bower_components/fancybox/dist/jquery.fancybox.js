@@ -1,5 +1,5 @@
 // ==================================================
-// fancyBox v3.0.30
+// fancyBox v3.0.33
 //
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
@@ -130,6 +130,7 @@
         // Error message template
         errorTpl : '<div class="fancybox-error"><p>The requested content cannot be loaded. <br /> Please try again later.<p></div>',
 
+        // This will be appended to html content, if "smallBtn" option is not set to false
         closeTpl : '<button data-fancybox-close class="fancybox-close-small">×</button>',
 
         // Container is injected into this element
@@ -2263,7 +2264,7 @@
 
     $.fancybox = {
 
-        version  : "3.0.30",
+        version  : "3.0.33",
         defaults : defaults,
 
 
@@ -2654,12 +2655,13 @@
 	// Formats matching url to final form
 
 	var format = function (url, rez, params) {
-		if (!url) {
+		if ( !url ) {
 			return;
 		}
+
 		params = params || '';
 
-		if ($.type(params) === "object") {
+		if ( $.type(params) === "object" ) {
 			params = $.param(params, true);
 		}
 
@@ -2696,7 +2698,7 @@
 		},
 
 		vimeo: {
-			matcher: /((player\.)?vimeo(pro)?\.com)\/(video\/)?([\d]+)?(\?(.*))?/,
+			matcher: /^.+vimeo.com\/(.*\/)?([\d]+)(.*)?/,
 			params: {
 				autoplay: 1,
 				hd: 1,
@@ -2706,9 +2708,9 @@
 				fullscreen: 1,
 				api: 1
 			},
-			paramPlace : 7,
+			paramPlace : 3,
 			type: 'iframe',
-			url: '//player.vimeo.com/video/$5'
+			url: '//player.vimeo.com/video/$2'
 		},
 
 		metacafe: {
@@ -2787,7 +2789,7 @@
 				if ( el.paramPlace && rez[ el.paramPlace ] ) {
 					urlParams = rez[ el.paramPlace ];
 
-					if ( urlParams[ 0 ] == '?') {
+					if ( urlParams[ 0 ] == '?' ) {
 						urlParams = urlParams.substring(1);
 					}
 
@@ -2802,14 +2804,14 @@
 					}
 				}
 
-				if ( el.idPlace ) {
-					id = rez[ el.idPlace ];
-				}
-
 				params = $.extend( true, {}, el.params, item.opts[ n ], o );
 
 				url   = $.type(el.url) === "function" ? el.url.call(this, rez, params, item) : format(el.url, rez, params);
 				thumb = $.type(el.thumb) === "function" ? el.thumb.call(this, rez, params, item) : format(el.thumb, rez);
+
+				if ( provider === 'vimeo' ) {
+					url = url.replace('&%23', '#');
+				}
 
 				return false;
 			});
@@ -2822,10 +2824,6 @@
 
 				if ( !item.opts.thumb && !(item.opts.$thumb && item.opts.$thumb.length ) ) {
 					item.opts.thumb = thumb;
-				}
-
-				if ( id ) {
-					item.opts.id = provider + '-' + id;
 				}
 
 				if ( type === 'iframe' ) {
@@ -2995,6 +2993,11 @@
 
 		// Ignore taping on links, buttons and scrollable items
 		if ( isClickable( $target ) || isClickable( $target.parent() ) || ( isScrollable( $target ) && !$target.hasClass('fancybox-slide') ) ) {
+			return;
+		}
+
+		// Ignore right click
+		if ( e.originalEvent && e.originalEvent.button == 2 ) {
 			return;
 		}
 
@@ -3514,6 +3517,11 @@
 
 		x = x - self.$wrap.offset().left;
 		y = y - self.$wrap.offset().top;
+
+		// Stop slideshow
+		if ( instance.SlideShow && instance.SlideShow.isActive ) {
+			instance.SlideShow.stop();
+		}
 
 		if ( !$.fancybox.isTouch ) {
 
