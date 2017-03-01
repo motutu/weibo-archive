@@ -9,8 +9,8 @@
     {{ info_nav_bar(info_text=info)|indent(4) }}
     <hr>
     <div class="gallery standalone clear">
-      {%- for date, status_url, filename in images %}
-      {%- set custom_data %}data-date="{{ date }}" data-status-url="{{ status_url }}"{% endset %}
+      {%- for status_url, filename in images %}
+      {%- set custom_data %}data-status-url="{{ status_url }}"{% endset %}
       {{ fancybox_image(filename, custom_data)|indent(6) }}
       {%- endfor %}
     </div>

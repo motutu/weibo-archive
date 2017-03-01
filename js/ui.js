@@ -8,6 +8,10 @@ $(function () {
   var $body = $('body')
   var $nav = $('nav')
 
+  // https://github.com/Modernizr/Modernizr/blob/master/feature-detects/touchevents.js
+  var hasTouchSupport = ('ontouchstart' in window) ||
+      window.DocumentTouch && document instanceof window.DocumentTouch
+
   var isHome = window.location.pathname.match(/\/(index(\.html)?)?/)
   var isGallery = window.location.pathname.match(/\/gallery(\.html)?/)
   var isInf = window.location.pathname.match(/\/inf(\.html)?/)
@@ -145,67 +149,74 @@ $(function () {
   $.fn.extend({
     initFancybox: function () {
       this.fancybox({
-        padding: 0,
-        nextClick: true,
-        arrows: false,
-        nextEffect: 'none',
-        prevEffect: 'none',
-        scrolling: 'hidden',
-        keys: {
-          prev: [65, 188, 37], // a, ','/<, left
-          next: [68, 190, 39], // d, '.'/>, right
-          close: [27, 79, 81] // esc, o, q
+        // Eliminate animations in desktop browsers (note that setting speed to 0 would break things)
+        speed: hasTouchSupport ? 300 : 1,
+        thumbs: !isGallery,
+        slideShow: {
+          speed: 1500
         },
-        helpers: {
-          overlay: {
-            locked: true
-          }
-        },
-        beforeLoad: function () {
-          if (isGallery) {
-            var date = this.element.attr('data-date').replace(/(\d{4})-(\d{2})-(\d{2})/, '$1年$2月$3日')
-            var url = this.element.attr('data-status-url')
-            this.title = `<a href="${url}" target="_blank">${date}</a>`
-          } else {
-            this.title = (this.index + 1) + ' / ' + this.group.length
-          }
-          // Add an "open original" link
-          var original = this.element.attr('href')
-          this.tpl.wrap = `
-<div class="fancybox-wrap" tabIndex="-1">
-  <div class="fancybox-title fancybox-title-outside-wrap view-original-link">
-    <a class="fancybox-tool" href="${original}" target="_blank">查看原图</a>
-  </div>
-  <div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div>
-</div>`
+        onInit: function (instance) {
           Mousetrap.pause()
-        },
-        afterShow: function () {
-          $('.fancybox-wrap')
-            .on('swipeleft', function () {
-              $.fancybox.next()
-            })
-            .on('swiperight', function () {
-              $.fancybox.prev()
-            })
-          $document.off('keypress.fancybox-open-original')
-          $document.on('keypress.fancybox-open-original', function (e) {
+
+          var buttons = instance.$refs.buttons
+          instance.$refs.openWeiboButton =
+            $('<a class="fancybox-button fancybox-open-weibo" target="_blank" title="Weibo (W)"></a>')
+            .appendTo(buttons)
+          instance.$refs.openImageButton =
+            $('<a class="fancybox-button fancybox-open-image" target="_blank" title="Open (O)"></a>')
+            .appendTo(buttons)
+
+          $document.on('keypress.inside-fancybox', function (e) {
             var key = String.fromCharCode(e.which)
             switch (key) {
-              case 'i':
-                $('a.fancybox-tool').get(0).click()
+              case 'a':
+              case ',':
+              case '<':
+                // Previous
+                instance.previous(1)
                 break
-              case 'O':
-                // Open original status if title contains such link
-                var titleLink = $('div.fancybox-title a').get(0)
-                if (titleLink) {
-                  titleLink.click()
+
+              case 'd':
+              case '.':
+              case '>':
+                // Next
+                instance.next(1)
+                break
+
+              case 'o':
+              case 'q':
+                // Close
+                instance.close()
+                break
+
+              case 'W':
+                // Open original weibo
+                var weiboLink = $('a.fancybox-open-weibo').get(0)
+                if (weiboLink) {
+                  weiboLink.click()
                 }
+                break
+
+              case 'O':
+                // Open original image
+                var imageLink = $('a.fancybox-open-image').get(0)
+                if (imageLink) {
+                  imageLink.click()
+                }
+                break
+
+              default:
+                return true
             }
+            return false
           })
         },
+        beforeMove: function (instance, current) {
+          instance.$refs.openWeiboButton.attr('href', current.opts.$orig.attr('data-status-url'))
+          instance.$refs.openImageButton.attr('href', current.src)
+        },
         beforeClose: function () {
-          $document.off('keypress.fancybox-open-original')
+          $document.off('keypress.inside-fancybox')
         },
         afterClose: function () {
           Mousetrap.unpause()
@@ -225,9 +236,13 @@ $(function () {
           console.error('Not a status:', e)
         }
 
-        // Add data-fancybox-group to fancybox images, and initialize fancybox
+        // Add data-fancybox and data-status-url to fancybox images, and initialize fancybox
         var statusId = $status.attr('id')
-        $status.find('.fancybox').attr('data-fancybox-group', statusId).initFancybox()
+        var statusUrl = $status.find('.weibo-link a').attr('href')
+        $status.find('.fancybox').attr({
+          'data-fancybox': statusId,
+          'data-status-url': statusUrl
+        }).initFancybox()
 
         // Click to highlight
         $status.click(function () {
@@ -256,7 +271,7 @@ $(function () {
   // Page specific
   if (isGallery) {
     // Link all gallery images to the same group
-    $('.fancybox').attr('data-fancybox-group', 'g').initFancybox()
+    $('.fancybox').attr('data-fancybox', 'g').initFancybox()
   } else if (isInf) {
     ;(function () {
       const totalPages = window.totalPages

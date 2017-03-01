@@ -131,9 +131,8 @@ nav a {
 .fancybox {
   position: relative;
 }
-.fancybox-tool {
-  color: #888;
-  border-bottom: none;
+.fancybox:focus {
+  outline: 0;
 }
 .fancybox .gif-indicator {
   position: absolute;
@@ -142,6 +141,18 @@ nav a {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #fff;
+}
+.fancybox-button.fancybox-open-weibo:before {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  background: url("/assets/images/icons/weibo.svg") center/18px no-repeat;
+}
+.fancybox-button.fancybox-open-image:before {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  background: url("/assets/images/icons/open.svg") center/14px no-repeat;
 }
 .loading {
   margin: 10px 0;

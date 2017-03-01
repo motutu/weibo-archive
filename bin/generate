@@ -4,8 +4,6 @@ import argparse
 import os
 import sys
 
-import arrow
-
 HERE = os.path.dirname(os.path.realpath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
@@ -57,11 +55,7 @@ def generate_paginated(statuses):
                       statuses=statuses[per_page*(page-1):per_page*page])
 
 def generate_gallery(statuses):
-    images = [(
-        arrow.get(status.created_at).to('Asia/Shanghai').strftime('%Y-%m-%d'),
-        status.url,
-        image,
-    ) for status in statuses for image in status.images.split()]
+    images = [(status.url, image) for status in statuses for image in status.images.split()]
     with jinjaenv.setglobal('LAZYLOAD', True):
         generate_page('gallery.html', 'gallery.html', images=images)
 

@@ -136,9 +136,8 @@ nav
 
 .fancybox
   position relative
-  &-tool
-    color dim-color
-    no-bottom-border()
+  &:focus
+    outline 0
   .gif-indicator
     position absolute
     left 5%
@@ -146,6 +145,18 @@ nav
     font-family Helvetica, Arial, sans-serif
     font-size 12px
     color white
+
+fancybox-button-before-svg(filename, size)
+  width 44px
+  height 44px
+  position relative
+  background url("/assets/images/icons/"filename) center/size no-repeat
+
+.fancybox-button
+  &.fancybox-open-weibo:before
+    fancybox-button-before-svg("weibo.svg", 18px)
+  &.fancybox-open-image:before
+    fancybox-button-before-svg("open.svg", 14px)
 
 .loading
   margin 10px 0

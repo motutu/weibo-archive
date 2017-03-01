@@ -1,244 +1,58 @@
-fancyBox
-========
+# fancyBox
 
-fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
+jQuery lightbox script for displaying images, videos and more.
+Touch enabled, responsive and fully customizable.
 
-More information and examples: http://www.fancyapps.com/fancybox/
+See the [project page](http://fancyapps.com/fancybox/) for documentation and a demonstration.
 
-License: http://www.fancyapps.com/fancybox/#license
-
-Copyright (c) 2012 Janis Skarnelis - janis@fancyapps.com
+Follow [@thefancyapps](//twitter.com/thefancyapps) for updates.
 
 
-How to use
-----------
+## Quick start
 
-To get started, download the plugin, unzip it and copy files to your website/application directory.
-Load files in the <head> section of your HTML document. Make sure you also add the jQuery library.
+1\.  Add latest jQuery and fancyBox files
 
 ```html
-<head>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
-</head>
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<link  href="/path/to/fancybox.css" rel="stylesheet">
+<script src="/path/to/fancybox.js"></script>
 ```
 
-Create your links with a `title` (or `data-fancybox-title`) if you want a title to be shown, and add a class:
+
+2\.  Create links
 
 ```html
-<a href="large_image.jpg" class="fancybox" title="Sample title"><img src="small_image.jpg" /></a>
+<a data-fancybox="gallery" href="big_1.jpg">
+    <img src="small_1.jpg">
+</a>
+
+<a data-fancybox="gallery" href="big_2.jpg">
+    <img src="small_2.jpg">
+</a>
 ```
 
-If you have a set of related items that you would like to group,
-additionally include a group name in the `rel` (or `data-fancybox-group`) attribute:
 
-```html
-<a href="large_1.jpg" class="fancybox" rel="gallery" title="Sample title 1"><img src="small_1.jpg" /></a>
-<a href="large_2.jpg" class="fancybox" rel="gallery" title="Sample title 1"><img src="small_2.jpg" /></a>
-```
+3\. Enjoy!
 
-Initialise the script like this:
 
-```html
-<script>
-    $(document).ready(function() {
-        $('.fancybox').fancybox();
-    });
-</script>
-```
+## License
 
-May also be passed an optional options object which will extend the default values. Example:
+fancyBox has two kinds of licenses: open-source and commercial.
 
-```html
-<script>
-    $(document).ready(function() {
-        $('.fancybox').fancybox({
-            padding : 0,
-            openEffect  : 'elastic',
-            closeBtn: false
-        });
-    });
-</script>
-```
 
-Tip: Automatically group and apply fancyBox to all images:
 
-```js
-$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
-```
+### Open source license
 
-Script uses the `href` attribute of the matched elements to obtain the location of the content and to figure out content type you want to display.
-You can specify type directly by adding classname (fancybox.image, fancybox.iframe, etc) or `data-fancybox-type` attribute:
+The open source license is designed for you to use fancyBox to build open source and personal projects or in educational scenarios that are free for students to view or attend. fancyBox open source license is [GPLv3](http://choosealicense.com/licenses/gpl-3.0).
 
-```html
-//Ajax:
-<a href="/example.html" class="fancybox fancybox.ajax">Example</a>
-//or
-<a href="/example.html" class="fancybox" data-fancybox-type="ajax">Example</a>
 
-//Iframe:
-<a href="example.html" class="fancybox fancybox.iframe">Example</a>
+### Commercial license
 
-//Inline (will display an element with `id="example"`)
-<a href="#example" class="fancybox">Example</a>
+If you want to use fancyBox to develop commercial sites, themes, projects, and applications without the provisions of the GPLv3, the commercial license is the appropriate license.
 
-//SWF:
-<a href="example.swf" class="fancybox">Example</a>
+[Read more about fancyBox license](http://fancyapps.com/fancybox/#license).
 
-//Image:
-<a href="example.jpg" class="fancybox">Example</a>
-```
+## Bug tracker
 
-Note, ajax requests are subject to the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy).
-If fancyBox will not be able to get content type, it will try to guess based on 'href' and will quit silently if would not succeed.
-(this is different from previsous versions where 'ajax' was used as default type or an error message was displayed).
-
-Advanced
---------
-
-### Helpers
-
-Helpers provide a simple mechanism to extend the capabilities of fancyBox. There are two built-in helpers - 'overlay' and 'title'.
-You can disable them, set custom options or enable other helpers. Examples:
-
-```js
-//Disable title helper
-$(".fancybox").fancybox({
-    helpers:  {
-        title:  null
-    }
-});
-
-//Disable overlay helper
-$(".fancybox").fancybox({
-    helpers:  {
-        overlay : null
-    }
-});
-
-//Change title position and overlay color
-$(".fancybox").fancybox({
-    helpers:  {
-        title : {
-            type : 'inside'
-        },
-        overlay : {
-            css : {
-                'background' : 'rgba(255,255,255,0.5)'
-            }
-        }
-    }
-});
-
-//Enable thumbnail helper and set custom options
-$(".fancybox").fancybox({
-    helpers:  {
-        thumbs : {
-            width: 50,
-            height: 50
-        }
-    }
-});
-```
-
-### API
-
-Also available are event driven callback methods.  The `this` keyword refers to the current or upcoming object (depends on callback method). Here is how you can change title:
-
-```js
-$(".fancybox").fancybox({
-    beforeLoad : function() {
-        this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-
-        /*
-            "this.element" refers to current element, so you can, for example, use the "alt" attribute of the image to store the title:
-            this.title = $(this.element).find('img').attr('alt');
-        */
-    }
-});
-```
-
-It`s possible to open fancyBox programmatically in various ways:
-
-```js
-//HTML content:
-$.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem lipsum</p></div>', {
-    title : 'Custom Title'
-});
-
-//DOM element:
-$.fancybox( $("#inline"), {
-    title : 'Custom Title'
-});
-
-//Custom object:
-$.fancybox({
-    href: 'example.jpg',
-    title : 'Custom Title'
-});
-
-//Array of objects:
-$.fancybox([
-    {
-        href: 'example1.jpg',
-        title : 'Custom Title 1'
-    },
-    {
-        href: 'example2.jpg',
-        title : 'Custom Title 2'
-    }
-], {
-    padding: 0
-});
-```
-
-There are several methods that allow you to interact with and manipulate fancyBox, example:
-
-```js
-//Close fancybox:
-$.fancybox.close();
-```
-
-There is a simply way to access wrapping elements using JS:
-
-```js
-$.fancybox.wrap
-$.fancybox.skin
-$.fancybox.outer
-$.fancybox.inner
-```
-
-You can override CSS to customize the look. For example, make navigation arrows always visible,
-change width and move them outside of area (use this snippet after including fancybox.css):
-
-```css
-.fancybox-nav span {
-    visibility: visible;
-}
-
-.fancybox-nav {
-    width: 80px;
-}
-
-.fancybox-prev {
-    left: -80px;
-}
-
-.fancybox-next {
-    right: -80px;
-}
-```
-
-In that case, you might want to increase space around box:
-
-```js
-$(".fancybox").fancybox({
-    margin : [20, 60, 20, 60]
-});
-```
-
-Bug tracker
------------
-
-Have a bug? Please create an issue on GitHub at https://github.com/fancyapps/fancyBox/issues
+If you find a bug, please report it [here on Github](https://github.com/fancyapps/fancyBox/issues)!
