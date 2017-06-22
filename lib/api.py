@@ -94,6 +94,8 @@ def save_status(json_):
             json.dump(json_, fp, ensure_ascii=False, sort_keys=True, indent=2)
 
         return json_, True
+    else:
+        return None, False
 
 # pages == 0 means fetch all pages (stop when a page is empty)
 # If update is True, stop when a saved status is encountered
@@ -111,6 +113,8 @@ def fetch_and_save(pages=0, start=1, update=True):
         encountered_old_status = False
         for card in cards:
             json_, new = save_status(card)
+            if not json_:
+                continue
             if new:
                 db.parse_and_save_status(json_)
             else:
