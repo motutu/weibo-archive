@@ -83,12 +83,13 @@ def flatten_status_body(body):
                 text += str(e)
     return text
 
-MWEIBOCN_STATUS_LINK = re.compile(r'^http://m\.weibo\.cn/status/(?P<basename>\w+)\?.*')
+MWEIBOCN_STATUS_LINK = re.compile(r'^https?://m\.weibo\.cn/status/(?P<basename>\w+)(\?.*)?')
 INCOMPLETE_STATUS_PATTERN = re.compile(r'<a href="/status/(?P<sid>\d+)">全文</a>')
 
 def parse_and_save_status(json_):
     status = {}
 
+    print(json_['scheme'])
     url_basename = MWEIBOCN_STATUS_LINK.match(json_['scheme']).group('basename')
     status['url'] = f'http://weibo.com/{config.uid}/{url_basename}'
 

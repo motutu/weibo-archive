@@ -61,7 +61,7 @@ def ensure_sinaimg(basename):
     logger.info(f'generating thumbnails for {basename}')
     subprocess.run([THUMBNAILER, basename])
 
-MWEIBOCN_STATUS_LINK = re.compile(r'^http://m\.weibo\.cn/status/(?P<basename>\w+)\?.*')
+MWEIBOCN_STATUS_LINK = re.compile(r'^https?://m\.weibo\.cn/status/(?P<basename>\w+)(\?.*)?')
 
 # Returns the transformed JSON object, and a bool indicating when the
 # status is new (hasn't been saved to disk before).
