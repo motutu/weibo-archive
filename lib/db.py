@@ -136,7 +136,9 @@ def parse_and_save_all_existing_statuses():
     for sid in api.list_existing_sids():
         parse_and_save_status(api.load_status(sid))
 
+LIVE_LINK = re.compile(r'https?://h5\.(snh48\.com|48\.cn)/\w*appshare/memberLiveShare')
+
 def filter_statuses(statuses):
     # Filter out live streaming feeds
-    statuses = [s for s in statuses if not 'href="http://h5.snh48.com/appshare/memberLiveShare' in s.body]
+    statuses = [s for s in statuses if not LIVE_LINK.search(s.body)]
     return statuses
