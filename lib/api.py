@@ -29,11 +29,11 @@ os.makedirs(os.path.join(IMAGEDIR, 'thumb180'), exist_ok=True)
 def fetch_statuses(page=1):
     logger.info(f'fetching page {page}')
     resp = session.get(
-        f'http://m.weibo.cn/container/getIndex?type=uid&value={UID}&containerid=107603{UID}&page={page}',
-        headers={'Referer': f'http://m.weibo.com/u/{UID}'},
+        f'https://m.weibo.cn/container/getIndex?type=uid&value={UID}&containerid=107603{UID}&page={page}',
+        headers={'Referer': f'https://m.weibo.com/u/{UID}'},
     )
     assert resp.status_code == 200
-    return resp.json()['cards']
+    return resp.json()['data']['cards']
 
 def ensure_sinaimg(basename):
     for res in ['large', 'thumb180']:
@@ -157,8 +157,8 @@ def list_existing_sids():
 def fetch_and_save_complete_status(sid):
     logger.info(f'fetching status {sid}')
     resp = session.get(
-        f'http://m.weibo.cn/statuses/extend?id={sid}',
-        headers={'Referer': f'http://m.weibo.com/status/{sid}'},
+        f'https://m.weibo.cn/statuses/extend?id={sid}',
+        headers={'Referer': f'https://m.weibo.com/status/{sid}'},
     )
     assert resp.status_code == 200
     obj = resp.json()
@@ -168,7 +168,7 @@ def fetch_and_save_complete_status(sid):
     with open(filesystem_path, 'w') as fp:
         json.dump(obj, fp, ensure_ascii=False, sort_keys=True, indent=2)
 
-    return obj['longTextContent']
+    return obj['data']['longTextContent']
 
 def load_complete_status(sid):
     filesystem_path = os.path.join(APIDIR_COMPLETE, f'{sid}.json')
