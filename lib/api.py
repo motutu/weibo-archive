@@ -7,6 +7,8 @@ import random
 import re
 import subprocess
 
+import arrow
+
 from . import config, db
 from .config import session
 from .logger import logger
@@ -124,17 +126,18 @@ def fetch_and_save(pages=0, start=1, update=True):
 
         page += 1
 
-TIMESTAMP_PATTERN = re.compile(r'date=\\"(?P<timestamp>\d+)000\\"')
-
 def fetch_timestamp(sid, status_url_basename):
-    status_url = f'http://weibo.com/{UID}/{status_url_basename}'
+    status_url = f'https://m.weibo.cn/status/{status_url_basename}'
     logger.info(f'fetching timestamp for {sid} from {status_url}')
     resp = session.get(
         status_url,
-        headers={'Referer': f'http://weibo.com/u/{UID}'},
+        headers={'Referer': f'https://m.weibo.cn/u/{UID}'},
     )
     assert resp.status_code == 200
-    return int(TIMESTAMP_PATTERN.search(resp.text).group('timestamp'))
+    m = re.search(r'"created_at": "(?P<datetime>.*?)"', resp.text)
+    assert m, f'{status_url}: created_at datetime not found in response'
+    datetime_ = m['datetime']
+    return int(arrow.get(datetime_, 'MMM DD HH:mm:ss Z YYYY').timestamp)
 
 def load_status(sid):
     filesystem_path = os.path.join(APIDIR, f'{sid}.json')
