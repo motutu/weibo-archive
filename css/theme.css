@@ -129,6 +129,16 @@ nav a {
   color: rgba(0,0,0,0);
   background: #f6cbde;
 }
+.gallery img:after {
+  content: "";
+  display: block;
+  background: #f6cbde;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 120px;
+  height: 120px;
+}
 .fancybox {
   position: relative;
 }

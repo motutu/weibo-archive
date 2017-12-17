@@ -135,6 +135,16 @@ nav
     color rgba(0, 0, 0, 0) // completely transparent
     background img-placeholder-color
 
+  img:after
+    content ""
+    display block
+    background img-placeholder-color
+    position absolute
+    top 1px
+    left 1px
+    width 120px
+    height 120px
+
 .fancybox
   position relative
   &:focus
