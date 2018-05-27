@@ -58,11 +58,20 @@ def flatten_status_body(body):
                     href.startswith('http://m.weibo.cn/k/')):
                     text += f'<b>{html.escape(e.text)}</b>'
                 elif e.span is not None and 'url-icon' in e.span['class']:
-                    ne = next(children)
-                    assert ne.name == 'span' and 'surl-text' in ne['class']
+                    ne = e.span.find_next_sibling('span')
+                    if ne is None:
+                        ne = next(children)
+                    try:
+                        assert ne.name == 'span' and 'surl-text' in ne['class']
+                    except AssertionError:
+                        logger.error('failed to parse: %s', body)
+                        raise
 
-                    shorturl = e['data-url']
-                    url = shortlinks.resolve(shorturl)
+                    if 'data-url' in e:
+                        shorturl = e['data-url']
+                        url = shortlinks.resolve(shorturl)
+                    else:
+                        shorturl = url = ''
                     desc = ne.text
 
                     text += f'<a href="{url}" data-canonical-href="{shorturl}" target="_blank">{html.escape(desc)}</a>'
