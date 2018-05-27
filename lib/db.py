@@ -32,7 +32,7 @@ class Status(peewee.Model):
         database = db
 
 db.connect()
-db.create_table(Status, safe=True)
+db.create_tables([Status], safe=True)
 
 def images_from_mblog(mblog):
     if 'pics' in mblog:
